@@ -15,3 +15,7 @@ cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64
 ./scripts/feeds install -a
 make defconfig
 make package/tinc/{clean,compile} V=s
+cd -
+pwd>PATH.txt
+tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
+cd -
