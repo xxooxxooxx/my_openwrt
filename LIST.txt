@@ -141,6 +141,8 @@ openwrt-sdk-19.07.6-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64
 │   └── zlib_1.2.11-3_x86_64.ipk
 ├── custom
 │   ├── 3proxy_0.8.13_x86_64.ipk
+│   ├── luci-app-switch-lan-play_0.0.3-1_all.ipk
+│   ├── switch-lan-play_0.2.3-1_x86_64.ipk
 │   ├── tinc_1.1pre17-1_x86_64.ipk
 │   ├── trojan_1.16.0-1_x86_64.ipk
 │   └── vlmcsd_svn1113-1_x86_64.ipk
@@ -299,4 +301,4 @@ openwrt-sdk-19.07.6-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64
     ├── xzmore_5.2.5-1_x86_64.ipk
     └── zstd_1.4.5-2_x86_64.ipk
 
-3 directories, 296 files
+3 directories, 298 files
