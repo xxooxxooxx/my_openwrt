@@ -28,7 +28,7 @@ sed -i "\$a\src-link custom ${H_PATH}/package" $(pwd)/feeds.conf.default
 make defconfig
 for i in ../package/* ; do
   if [[ -d "$i" ]]; then
-    make package/${i##*/}{clean,compile} -j
+    make package/${i##*/}/{clean,compile} -j
   fi
 done
 cd - &>/dev/null
