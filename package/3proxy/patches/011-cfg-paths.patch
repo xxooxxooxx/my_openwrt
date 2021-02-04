@@ -1,0 +1,52 @@
+--- a/scripts/3proxy.cfg
++++ b/scripts/3proxy.cfg
+@@ -1,32 +1,29 @@
+-#!/usr/local/etc/3proxy/bin/3proxy
++#!/usr/bin/3proxy
+ daemon
+-pidfile /usr/local/etc/3proxy/3proxy.pid
++pidfile /tmp/3proxy.pid
+ nscache 65536
+ nserver 127.0.0.1
+ 
+-config /usr/local/etc/3proxy/3proxy.cfg
+-monitor /usr/local/etc/3proxy/3proxy.cfg
+-monitor /usr/local/etc/3proxy/counters
+-monitor /usr/local/etc/3proxy/passwd
+-monitor /usr/local/etc/3proxy/bandlimiters
++config /etc/3proxy/3proxy.cfg
++monitor /etc/3proxy/3proxy.cfg
++monitor /etc/3proxy/counters
++monitor /etc/3proxy/passwd
++monitor /etc/3proxy/bandlimiters
++
++#log /var/log/3proxylog D
++#rotate 60
++#counter /etc/3proxy/3proxy.3cf
+ 
+-log /var/log/3proxy/log D
+-rotate 60
+-counter /usr/local/etc/3proxy/3proxy.3cf
++#users $/etc/3proxy/passwd
+ 
+-users $/usr/local/etc/3proxy/passwd
++include /etc/3proxy/counters
++include /etc/3proxy/bandlimiters
+ 
+-include /usr/local/etc/3proxy/counters
+-include /usr/local/etc/3proxy/bandlimiters
+-
+-auth strong
++#auth strong
+ deny * * 127.0.0.1
+ allow *
+ proxy -n
+ socks
+ flush
+-allow admin
+-
+-admin -p8080
+-
+-
++#allow admin
++#admin -p8080
