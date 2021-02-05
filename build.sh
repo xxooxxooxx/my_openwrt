@@ -19,8 +19,7 @@ cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64
 
 #echo "src-link custom $H_PATH/package" >> $(pwd)/feeds.conf.default
 #sed -i "\$a\src-link custom ${H_PATH}/package" $(pwd)/feeds.conf.default
-sed -i "\$a\src-git openwrt_custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
-cat $(pwd)/feeds.conf.default >>PATH.txt
+sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
