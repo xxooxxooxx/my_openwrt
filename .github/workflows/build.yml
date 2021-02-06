@@ -47,6 +47,7 @@ jobs:
         working-directory: ./gh-pages
       - name: Push changes
         uses: ad-m/github-push-action@master
+        working-directory: ./gh-pages
         with:
           branch: gh-pages
           force: true
