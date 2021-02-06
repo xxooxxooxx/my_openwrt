@@ -30,6 +30,7 @@ jobs:
       - run: pwd
       - run: echo $GITHUB_WORKSPACE
       - run: ls -al
+      - run: ls main -al
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
