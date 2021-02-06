@@ -24,8 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          path: main
 #      - run: bash ./build.sh
       - run: echo $GITHUB_WORKSPACE
+      - run: ls -al
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
