@@ -27,6 +27,7 @@ jobs:
         with:
           path: main
 #      - run: bash ./build.sh
+      - run: pwd
       - run: echo $GITHUB_WORKSPACE
       - run: ls -al
       - name: Commit files
