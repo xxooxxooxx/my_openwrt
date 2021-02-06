@@ -27,15 +27,17 @@ jobs:
         with:
           path: main
       - run: ls -al
-      - name: build
+#      - name: build
+        
+      - run: bash ./build.sh
         working-directory: ./main
-        run: bash ./build.sh
 #      - run: echo $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
         with:
          ref: gh-pages
-         paht: gh-pages
+         path: gh-pages
       - run: ls -al
+      - run: pwd
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
