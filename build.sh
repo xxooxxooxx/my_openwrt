@@ -29,9 +29,11 @@ sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/
 make defconfig
 for i in ../package/* ; do
   if [[ -d "$i" ]]; then
-    make package/${i##*/}/{clean,compile} -j
+#    make package/${i##*/}/{clean,compile} -j
+     date
   fi
 done
 cd - &>/dev/null
 pwd>>PATH.txt
-tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
+#tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
+date>LIST.txt
