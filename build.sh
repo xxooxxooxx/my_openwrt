@@ -30,6 +30,7 @@ make defconfig
 for i in ../package/* ; do
   if [[ -d "$i" ]]; then
 #    make package/${i##*/}/{clean,compile} -j
+     date
   fi
 done
 cd - &>/dev/null
