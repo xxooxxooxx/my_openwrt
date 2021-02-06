@@ -28,7 +28,7 @@ jobs:
           path: main
       - run: ls -al
       - run: cd main
-      - run: ls main -al
+      - run: ls -al
       - run: bash ./build.sh
       - run: cd -
 #      - run: echo $GITHUB_WORKSPACE
