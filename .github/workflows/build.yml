@@ -26,9 +26,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           path: main
-      - working-directory: ./main
       - run: ls -al
-      - run: bash ./build.sh
+      - name: build
+        working-directory: ./main
+        run: bash ./build.sh
 #      - run: echo $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
         with:
