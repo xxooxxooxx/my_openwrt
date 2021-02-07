@@ -1,0 +1,71 @@
+Package: 3proxy
+Version: 0.8.13-1
+Depends: libc, libpthread, libopenssl1.1
+License: GPLv2
+Section: net
+Architecture: x86_64
+Installed-Size: 94616
+Filename: 3proxy_0.8.13-1_x86_64.ipk
+Size: 95305
+SHA256sum: 5ae9db743670b1570c65a808b783bbe0093efbda9fc14997aa97b190378ee7a9
+Description:  3APA3A 3proxy tiny proxy server
+
+Package: luci-app-switch-lan-play
+Version: 0.0.3-1
+Depends: libc, switch-lan-play
+Section: luci
+Architecture: all
+Installed-Size: 1445
+Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
+Size: 2254
+SHA256sum: a27908dbada9172128075d251d522575990428d2aea2d50bd7e62e4faea839de
+Description:  LuCI web-interface for Switch Lan Play Client
+
+Package: switch-lan-play
+Version: 0.2.3-1
+Depends: libc, libpcap1, libpthread, libstdcpp6, libatomic1
+License: GPLv3
+Section: net
+Architecture: x86_64
+Installed-Size: 228761
+Filename: switch-lan-play_0.2.3-1_x86_64.ipk
+Size: 229476
+SHA256sum: 0829bad6cc050417b1beeff94c5dea07d6bedabea9571a6296ac2fef8c499524
+Description:  Make you and your friends play games like in a LAN.
+
+Package: tinc
+Version: 1.1pre17-1
+Depends: libc, kmod-tun, libopenssl1.1, zlib, liblzo2, libreadline8, libpcap1, libncurses6
+Section: net
+Architecture: x86_64
+Installed-Size: 239392
+Filename: tinc_1.1pre17-1_x86_64.ipk
+Size: 240357
+SHA256sum: 568e98c606b9d1d9b2bd2dc06cd1c0b17aa4efc86f879317ba18348c3343767a
+Description:  tinc is a Virtual Private Network (VPN) daemon that uses tunnelling and
+ encryption to create a secure private network between hosts on the Internet.
+
+Package: trojan
+Version: 1.16.0-1
+Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+License: GPL-3.0
+Section: net
+Architecture: x86_64
+Installed-Size: 277423
+Filename: trojan_1.16.0-1_x86_64.ipk
+Size: 278283
+SHA256sum: f1073f4a2ba94a955f8afae0f2b7e8f301a9da3cf5036fc8c95a416bd14d428c
+Description:  An unidentifiable mechanism that helps you bypass GFW
+
+Package: vlmcsd
+Version: svn1113-1
+Depends: libc, libpthread
+License: MIT
+Section: net
+Architecture: x86_64
+Installed-Size: 51293
+Filename: vlmcsd_svn1113-1_x86_64.ipk
+Size: 52006
+SHA256sum: ad608a4cc53b225de1e8868960136e65cfe21a2bcd9876e1778c500527c7bcbb
+Description:  vlmcsd is a KMS Emulator in C.
+
