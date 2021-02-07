@@ -27,7 +27,7 @@ jobs:
 #      - uses: actions/checkout@v2
 #        with:
 #          path: main
-      - run: echo ${{secrets.key}} >key-build
+      - run: echo "${{secrets.KEY}}" >key-build
       - run: |
           cat >key-build.pub<<EOF
           untrusted comment: my_openwrt key
