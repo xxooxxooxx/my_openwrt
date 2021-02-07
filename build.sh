@@ -22,9 +22,9 @@ cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64
 sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
-./scripts/feeds install -a -f -p custom
-#./scripts/feeds uninstall tinc
-#./scripts/feeds install -p custom tinc
+./scripts/feeds install -a -p custom
+./scripts/feeds uninstall tinc
+./scripts/feeds install -p custom tinc
 
 make defconfig
 for i in ../package/* ; do
