@@ -36,14 +36,14 @@ jobs:
          ref: gh-pages
          path: gh-pages
 #         fetch-depth: 0
-      - run: cp ./LIST.txt ./gh-pages/
+      - run: mv packages ./gh-pages/
       - name: Commit files
         run: |
           ls -al
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add LIST.txt
-          git commit -m "update"
+          git add -all
+          git commit -m "bot update"
         working-directory: ./gh-pages
       - name: Push changes
         uses: ad-m/github-push-action@master

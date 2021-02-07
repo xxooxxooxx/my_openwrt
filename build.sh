@@ -34,6 +34,7 @@ for i in feeds/custom/package/* ; do
   fi
 done
 cd - &>/dev/null
-pwd>>PATH.txt
-tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
+mv openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
+
+#tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
 #date>LIST.txt
