@@ -23,17 +23,32 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+#      - run: echo $GITHUB_WORKSPACE
+#      - uses: actions/checkout@v2
+#        with:
+#          path: main
+#      - run: ls -al
+      - run: wget https://raw.githubusercontent.com/xxooxxooxx/my_openwrt/main/build.sh 
       - run: bash ./build.sh
+#        working-directory: ./main
+      - uses: actions/checkout@v2
+        with:
+         ref: gh-pages
+         path: gh-pages
+#         fetch-depth: 0
+      - run: cp ./LIST.txt ./gh-pages/
       - name: Commit files
         run: |
+          ls -al
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add LIST.txt
           git commit -m "update"
+        working-directory: ./gh-pages
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
+          directory: ./gh-pages
           branch: gh-pages
           force: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
