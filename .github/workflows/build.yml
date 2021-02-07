@@ -27,7 +27,6 @@ jobs:
 #      - uses: actions/checkout@v2
 #        with:
 #          path: main
-#      - run: ls -al
       - run: wget https://raw.githubusercontent.com/xxooxxooxx/my_openwrt/main/build.sh 
       - run: bash ./build.sh
 #        working-directory: ./main
@@ -39,10 +38,9 @@ jobs:
       - run: mv packages ./gh-pages/
       - name: Commit files
         run: |
-          ls -al
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -all
+          git add -A
           git commit -m "bot update"
         working-directory: ./gh-pages
       - name: Push changes
