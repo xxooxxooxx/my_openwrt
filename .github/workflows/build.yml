@@ -42,9 +42,10 @@ jobs:
          ref: gh-pages
          path: gh-pages
 #         fetch-depth: 0
-      - run: cp -a packages ./gh-pages/
       - name: Commit files
         run: |
+          rm -rf packages
+          mv ../packages .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
