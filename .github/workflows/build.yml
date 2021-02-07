@@ -33,8 +33,7 @@ jobs:
           untrusted comment: my_openwrt key
           RWT54tRzoWl9TS58xkcY5koeSXJ3iln3MpvSfbc95la6qc6pjk9Qpvek
           EOF
-      - run: ls -al
-      - run: wget https://raw.githubusercontent.com/xxooxxooxx/my_openwrt/main/build.sh 
+      - run: wget https://raw.githubusercontent.com/xxooxxooxx/my_openwrt/main/build.sh
       - run: bash ./build.sh
 #        working-directory: ./main
       - uses: actions/checkout@v2
