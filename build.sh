@@ -33,9 +33,8 @@ for i in feeds/custom/package/* ; do
     make package/${i##*/}/{clean,compile} -j
   fi
 done
+cd - &>/dev/null
 mv openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
 
-#cd - &>/dev/null
-#pwd>>PATH.txt
 #tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
 #date>LIST.txt
