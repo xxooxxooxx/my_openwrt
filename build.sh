@@ -27,10 +27,10 @@ sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/
 ./scripts/feeds install -p custom tinc
 
 make defconfig
+ls -al
 for i in ../package/* ; do
   if [[ -d "$i" ]]; then
     make package/${i##*/}/{clean,compile} -j
-#     date
   fi
 done
 cd - &>/dev/null
