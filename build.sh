@@ -13,7 +13,7 @@ wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-
 tar xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
 tar xf openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64.tar.xz
 H_PATH=$(pwd)
-ls -al
+cat key-build.pub
 cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64
 ./scripts/feeds update -a
 ./scripts/feeds install -a
