@@ -45,7 +45,7 @@ jobs:
         run: |
           rm -rf packages
           mv ../packages .
-          cp ../key-build.pub public.key
+          cp ../key-build.pub packages/public.key
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
