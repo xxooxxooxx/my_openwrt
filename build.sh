@@ -13,8 +13,9 @@ wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-
 tar xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
 tar xf openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64.tar.xz
 H_PATH=$(pwd)
-cat key-build.pub
+
 cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64
+mv ../key-build* .
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
@@ -31,11 +32,13 @@ make defconfig
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
-    make package/${i##*/}/{clean,compile} -j
+#    make package/${i##*/}/{clean,compile} -j
+    make package/${i##*/}/compile -j
   fi
 done
+make package/index
 cd - &>/dev/null
-mv openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
+cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
 
 #tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
 #date>LIST.txt
