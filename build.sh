@@ -28,17 +28,38 @@ sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/
 ./scripts/feeds uninstall tinc
 ./scripts/feeds install -p custom tinc
 
+. ../main/DEFAULT
+STR=$DEFAULT
+
 make defconfig
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
 #    make package/${i##*/}/{clean,compile} -j
     make package/${i##*/}/compile -j
+    STR="${STR} ${i##*/}"
   fi
 done
+
 make package/index
 cd - &>/dev/null
+
 cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
 
+cat >./main/files/etc/opkg/distfeeds.conf <<-EOF
+	src/gz openwrt_core https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/packages
+	src/gz openwrt_base https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/base
+	src/gz openwrt_luci https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/luci
+	src/gz openwrt_packages https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/packages
+	src/gz openwrt_routing https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/routing
+	src/gz openwrt_telephony https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/telephony
+EOF
+
+cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
+sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
+make image PROFILE=Generic \
+           PACKAGES="$STR" \
+           FILES=../main/files/ \ 
+           DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy"
+
 #tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
-#date>LIST.txt

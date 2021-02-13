@@ -1,0 +1,4 @@
+export DEFAULT="luci luci-i18n-base-zh-cn luci-theme-openwrt -dnsmasq dnsmasq-full ipset ipset-dns libustream-openssl \
+                tor ca-bundle ca-certificates bash curl wget git-http python kmod-tcp-bbr 6in4 shadowsocks-libev-ss-tunnel shadowsocks-libev-ss-local \
+                strongswan-default strongswan-mod-md4 strongswan-mod-openssl strongswan-mod-uci strongswan-mod-eap-mschapv2 strongswan-mod-eap-identity kmod-crypto-gcm openssl-util \ 
+                uci-i18n-shadowsocks-libev-zh-cn openvpn-openssl luci-i18n-openvpn-zh-cn coreutils-base64 luci-proto-openconnect luci-proto-relay"
