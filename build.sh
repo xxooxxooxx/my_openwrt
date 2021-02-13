@@ -41,7 +41,7 @@ for i in feeds/custom/package/* ; do
   fi
 done
 
-make package/index
+#make package/index
 cd - &>/dev/null
 
 #cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
