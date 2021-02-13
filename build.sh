@@ -61,7 +61,7 @@ sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 ls -al
 cat repositories.conf
 
-make image PROFILE=Generic PACKAGES=$(echo "$STR")
+make image PROFILE=Generic PACKAGES="tinc 3proxy"
 
 ls bin/targets/x86/64/ -al
 
