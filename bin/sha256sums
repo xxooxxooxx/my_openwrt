@@ -1,0 +1,7 @@
+5dad47f2176d1f68427e07320fa64f5a13ac777df488ed57a55b63ca2752aade *openwrt-19.07.6-x86-64-combined-ext4.img.gz
+3486f59de46ca6455aedadffd746135b8d80d31a07229ca54a8432c75895a13f *openwrt-19.07.6-x86-64-combined-squashfs.img.gz
+0b1184182fbf1cd71fe9fb132965f1062c57e3d5bc99dfadcb1f11cc72654cce *openwrt-19.07.6-x86-64-generic-rootfs.tar.gz
+e3d6e9a7254de99f5459e36a0f42ef28aa7660e2075268ae46c2c7d6a49763d4 *openwrt-19.07.6-x86-64-generic.manifest
+f4e98e35a27c1b1270f8d208ab234610cbdfb12ca01d1be40a23700d301f35e6 *openwrt-19.07.6-x86-64-rootfs-ext4.img.gz
+e26bff888c0656424687988df6384fa32d9381bd075b8c63e524a2d73f2000eb *openwrt-19.07.6-x86-64-rootfs-squashfs.img.gz
+ff22958e2bfc17a3817f3f0c181bfbaa7971538457f1b888cba518da929fcdf0 *openwrt-19.07.6-x86-64-vmlinuz
