@@ -33,14 +33,21 @@ jobs:
           untrusted comment: my_openwrt key
           RWT54tRzoWl9TS58xkcY5koeSXJ3iln3MpvSfbc95la6qc6pjk9Qpvek
           EOF
-      - run: wget https://raw.githubusercontent.com/xxooxxooxx/my_openwrt/main/build.sh
-      - run: bash ./build.sh
-#        working-directory: ./main
+      - uses: actions/checkout@v2
+        with:
+         ref: main
+         path: main
+
       - uses: actions/checkout@v2
         with:
          ref: gh-pages
          path: gh-pages
+#        working-directory: ./main
 #         fetch-depth: 0
+      - run: wget https://raw.githubusercontent.com/xxooxxooxx/my_openwrt/main/build.sh
+      - run: ls -al
+      - run: bash ./build.sh
+
       - name: Commit files
         run: |
           rm -rf packages
@@ -51,6 +58,7 @@ jobs:
           git add -A
           git commit -m "bot update"
         working-directory: ./gh-pages
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
