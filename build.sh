@@ -61,8 +61,7 @@ sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 ls -al
 cat repositories.conf
 
-make image PROFILE=Generic \
-PACKAGES="$STR"
+make image PROFILE=Generic PACKAGES="$(echo "$STR")"
 
 ls bin/targets/x86/64/ -al
 
