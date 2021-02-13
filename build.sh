@@ -63,7 +63,7 @@ cat repositories.conf
 
 make image PROFILE=Generic \
 #           PACKAGES="$STR" \
-           FILES="../main/files/" \ 
+           FILES=../main/files/ \ 
            DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy"
 
 #tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
