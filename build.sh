@@ -62,7 +62,7 @@ ls -al
 cat repositories.conf
 echo STR=$STR
 
-make image PROFILE=Generic PACKAGES="tinc 3proxy"
+make image PROFILE=Generic PACKAGES="$STR"
 
 ls bin/targets/x86/64/ -al
 
