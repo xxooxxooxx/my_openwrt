@@ -62,7 +62,7 @@ ls -al
 cat repositories.conf
 
 make image PROFILE=Generic \
-           PACKAGES="$STR" \
+#           PACKAGES="$STR" \
            FILES="../main/files/" \ 
            DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy"
 
