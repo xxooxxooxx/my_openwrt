@@ -57,6 +57,7 @@ cat >./main/files/etc/opkg/distfeeds.conf <<-EOF
 EOF
 
 cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
+ls -al
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 make image PROFILE=Generic \
            PACKAGES="$STR" \
