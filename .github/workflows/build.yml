@@ -50,8 +50,9 @@ jobs:
 
       - name: Commit files
         run: |
-          rm -rf packages
+          rm -rf packages bin
           mv ../packages .
+          mv ../bin .
           cp ../key-build.pub packages/public.key
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"

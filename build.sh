@@ -62,8 +62,12 @@ ls -al
 cat repositories.conf
 echo STR=$STR
 
-make image PROFILE=Generic PACKAGES="$STR"
+make image PROFILE=Generic PACKAGES="$STR" \
+           FILES=../main/files/ \
+           DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy"
 
 ls bin/targets/x86/64/ -al
+cd - &>/dev/null
+cp -a openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64/bin/targets/x86/64 bin
 
 #tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
