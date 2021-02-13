@@ -61,6 +61,9 @@ sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 ls -al
 cat repositories.conf
 
-make image PROFILE=Generic 
+make image PROFILE=Generic \
+PACKAGES="$STR"
+
+ls bin/targets/x86/64/ -al
 
 #tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
