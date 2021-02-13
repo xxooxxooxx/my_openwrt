@@ -36,7 +36,7 @@ make defconfig
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
 #    make package/${i##*/}/{clean,compile} -j
-    make package/${i##*/}/compile -j
+#    make package/${i##*/}/compile -j
     STR="${STR} ${i##*/}"
   fi
 done
@@ -44,7 +44,8 @@ done
 make package/index
 cd - &>/dev/null
 
-cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
+#cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64/bin/packages/x86_64/custom packages
+cp -a ./main/bin packages
 
 cat >./main/files/etc/opkg/distfeeds.conf <<-EOF
 	src/gz openwrt_core https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/packages
