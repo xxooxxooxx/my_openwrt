@@ -60,6 +60,7 @@ cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 ls -al
 cat repositories.conf
+echo STR=$STR
 
 make image PROFILE=Generic PACKAGES="tinc 3proxy"
 
