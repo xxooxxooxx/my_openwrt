@@ -58,7 +58,7 @@ EOF
 
 cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
-sed -i "s/CONFIG_TARGET_ROOTFS_PARTSIZE=256/CONFIG_TARGET_ROOTFS_PARTSIZE=512/g" $(pwd)/.config
+sed -i "s/CONFIG_TARGET_ROOTFS_PARTSIZE=256/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
 
 make image PROFILE=Generic PACKAGES="$STR" \
            FILES=../main/files/ \
