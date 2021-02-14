@@ -6,3 +6,5 @@ wget https://xxooxxooxx.github.io/my_openwrt/packages/public.key
 opkg-key add public.key
 opkg update
 ```
+
+https://github.com/xxooxxooxx/my_openwrt/tree/gh-pages
