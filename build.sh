@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-SDK_VERSION=19.07.6
+SDK_VERSION=19.07.7
 
 sudo apt-get update
 sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
