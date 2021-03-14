@@ -8,10 +8,10 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: xo
 Architecture: x86_64
-Installed-Size: 94616
+Installed-Size: 94611
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 95305
-SHA256sum: 5ae9db743670b1570c65a808b783bbe0093efbda9fc14997aa97b190378ee7a9
+Size: 95227
+SHA256sum: 7faa4429fc7cbf134eda685c4dbb8cec4a5b1d377e15438c1418bb7bcfd2c214
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-switch-lan-play
@@ -21,10 +21,10 @@ Source: feeds/custom/package/luci-app-switch-lan-play
 SourceName: luci-app-switch-lan-play
 Section: luci
 Architecture: all
-Installed-Size: 1445
+Installed-Size: 1443
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2254
-SHA256sum: a27908dbada9172128075d251d522575990428d2aea2d50bd7e62e4faea839de
+Size: 2245
+SHA256sum: 27f04823be78162c97ffff5a175976d3ecdc8c480476fb9ddd5876ee9e02172e
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: switch-lan-play
@@ -36,10 +36,10 @@ License: GPLv3
 LicenseFiles: LICENSE.TXT
 Section: net
 Architecture: x86_64
-Installed-Size: 228761
+Installed-Size: 228757
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 229476
-SHA256sum: 0829bad6cc050417b1beeff94c5dea07d6bedabea9571a6296ac2fef8c499524
+Size: 229462
+SHA256sum: 0f741c80aff9dac0394d5a1790f834aed28015ee83e5427aa678a194fa200f60
 Description:  Make you and your friends play games like in a LAN.
 
 Package: tinc
@@ -50,10 +50,10 @@ SourceName: tinc
 Section: net
 Maintainer: Saverio Proto <zioproto@gmail.com>
 Architecture: x86_64
-Installed-Size: 239392
+Installed-Size: 239391
 Filename: tinc_1.1pre17-1_x86_64.ipk
-Size: 240357
-SHA256sum: 568e98c606b9d1d9b2bd2dc06cd1c0b17aa4efc86f879317ba18348c3343767a
+Size: 240351
+SHA256sum: c9b9913a94eacf259e55915b1f66c5cf1ea6853113f2ec77ceda920107c11a11
 Description:  tinc is a Virtual Private Network (VPN) daemon that uses tunnelling and
  encryption to create a secure private network between hosts on the Internet.
 
@@ -66,10 +66,10 @@ License: GPL-3.0
 Section: net
 Maintainer: GreaterFire
 Architecture: x86_64
-Installed-Size: 277423
+Installed-Size: 277395
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 278283
-SHA256sum: f1073f4a2ba94a955f8afae0f2b7e8f301a9da3cf5036fc8c95a416bd14d428c
+Size: 278261
+SHA256sum: b155a847c98e5651fce6d9071e6d999fb9645accc4d3e7c54d7816681d3d1add
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -82,9 +82,9 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: HotBird64
 Architecture: x86_64
-Installed-Size: 51292
+Installed-Size: 51293
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52002
-SHA256sum: 6b2692d4184a59ffd55e7c65931fa8085cb810fac2717ba86acf8bd72ec36ff2
+Size: 51857
+SHA256sum: 271965409f136960c66386b3d2c90dd142acfead103e56e76a13bcac6866d840
 Description:  vlmcsd is a KMS Emulator in C.
 
