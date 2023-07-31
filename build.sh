@@ -4,6 +4,7 @@ SDK_VERSION=23.05.0-rc2
 GCC_VER=12.3.0
 
 sudo apt-get update
+cat key-build
 sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
 gettext git java-propose-classpath libelf-dev libncurses5-dev \
 libncursesw5-dev libssl-dev python2 python2.7-dev python3 unzip wget \
