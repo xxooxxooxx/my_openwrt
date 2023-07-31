@@ -5,6 +5,7 @@ GCC_VER=12.3.0
 
 cat key-build>11.txt
 cat 11.txt
+ls -al
 sudo apt-get update
 sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
 gettext git java-propose-classpath libelf-dev libncurses5-dev \
