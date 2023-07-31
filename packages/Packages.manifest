@@ -6,13 +6,13 @@ SourceName: 3proxy
 License: GPLv2
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1690832555
+SourceDateEpoch: 1690841309
 Maintainer: xo
 Architecture: x86_64
-Installed-Size: 98056
+Installed-Size: 98059
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 98812
-SHA256sum: d6b60278398993fd0b41773102b711c526a98297bfe71cc7910810b36d866b12
+Size: 98805
+SHA256sum: deace36ddd4631de1b1ead10cea25e123e0c5f422af4ac23d4d84286c91cc2b3
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-switch-lan-play
@@ -21,12 +21,12 @@ Depends: libc, switch-lan-play
 Source: feeds/custom/package/luci-app-switch-lan-play
 SourceName: luci-app-switch-lan-play
 Section: luci
-SourceDateEpoch: 1690832555
+SourceDateEpoch: 1690841309
 Architecture: all
-Installed-Size: 1448
+Installed-Size: 1449
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2285
-SHA256sum: 5f510460e08ab0df49ab5e51eac3dc0eebd629d3bc9f109f1624f456b8cb3a74
+Size: 2292
+SHA256sum: 6ebd3b76e2ee3c6e296cb3e9530b9a6f0f28642c397ea8b724bfdbf45d63d040
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: switch-lan-play
@@ -37,12 +37,12 @@ SourceName: switch-lan-play
 License: GPLv3
 LicenseFiles: LICENSE.TXT
 Section: net
-SourceDateEpoch: 1690832555
+SourceDateEpoch: 1690841309
 Architecture: x86_64
-Installed-Size: 225338
+Installed-Size: 225349
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226111
-SHA256sum: aecc95778d2701afca4dd787ce07e8fe8ad02f1e950faba45468926a3940d19f
+Size: 226126
+SHA256sum: 39469bdf0448aaba9fa24daa7cdee73580522c5ec75c6462d54c55875edd1535
 Description:  Make you and your friends play games like in a LAN.
 
 Package: tinc
@@ -51,14 +51,14 @@ Depends: libc, kmod-tun, libopenssl3, zlib, liblzo2, libreadline8, libpcap1, lib
 Source: feeds/custom/package/tinc
 SourceName: tinc
 Section: net
-SourceDateEpoch: 1690832555
+SourceDateEpoch: 1690841309
 CPE-ID: cpe:/a:tinc:tinc
 Maintainer: Saverio Proto <zioproto@gmail.com>
 Architecture: x86_64
-Installed-Size: 239539
+Installed-Size: 239542
 Filename: tinc_1.1pre17-1_x86_64.ipk
-Size: 240543
-SHA256sum: 23a35c52133dc960aeb60b75a4f929e62fc18ba34700a6f4ec59b630f2248716
+Size: 240545
+SHA256sum: 2f804e2eb1488f70480f213c48433a7d60a4934e2b115ab6e29cfe3e0d6c434e
 Description:  tinc is a Virtual Private Network (VPN) daemon that uses tunnelling and
  encryption to create a secure private network between hosts on the Internet.
 
@@ -69,13 +69,13 @@ Source: feeds/custom/package/trojan
 SourceName: trojan
 License: GPL-3.0
 Section: net
-SourceDateEpoch: 1690832555
+SourceDateEpoch: 1690841309
 Maintainer: GreaterFire
 Architecture: x86_64
 Installed-Size: 312924
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 313835
-SHA256sum: c0be444d74e99fb49f4bd8c9f353a61bf177320c6014894d41e640d082fe76a2
+Size: 313848
+SHA256sum: 1017ed5840b4b79af8026334b82e61b8d95991a49807859268a76c052feae6d7
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -86,12 +86,12 @@ SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1690832555
+SourceDateEpoch: 1690841309
 Maintainer: HotBird64
 Architecture: x86_64
-Installed-Size: 51514
+Installed-Size: 51516
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52234
-SHA256sum: 7ad319a55d5abd04ea7b8a5a0c6af191714b38d170b45d22ff507fa423da6716
+Size: 52254
+SHA256sum: e517147ce8e4939f02220eb4ebba3a3c903bb3a95bc697c12358e656bb27a125
 Description:  vlmcsd is a KMS Emulator in C.
 
