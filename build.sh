@@ -60,7 +60,7 @@ cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 sed -i "s/CONFIG_TARGET_ROOTFS_PARTSIZE=256/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
 
-make image PROFILE=Generic PACKAGES="$STR" \
+make image PROFILE=generic PACKAGES="$STR" \
            FILES=../main/files/ \
            DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy"
 
