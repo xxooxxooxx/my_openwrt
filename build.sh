@@ -3,9 +3,6 @@
 SDK_VERSION=23.05.0-rc2
 GCC_VER=12.3.0
 
-cat key-build>11.txt
-cat 11.txt
-ls -al
 sudo apt-get update
 sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
 gettext git java-propose-classpath libelf-dev libncurses5-dev \
@@ -17,6 +14,10 @@ wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-
 tar xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
 tar xf openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64.tar.xz
 H_PATH=$(pwd)
+
+cat key-build>11.txt
+cat 11.txt
+ls -al
 
 cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64
 cp ../key-build* .
