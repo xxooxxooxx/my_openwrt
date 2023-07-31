@@ -14,7 +14,7 @@ tar xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
 tar xf openwrt-sdk-$SDK_VERSION-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
 H_PATH=$(pwd)
 
-cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-7.5.0_musl.Linux-x86_64
+cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-12.3.0_musl.Linux-x86_64
 cp ../key-build* .
 ./scripts/feeds update -a
 ./scripts/feeds install -a
