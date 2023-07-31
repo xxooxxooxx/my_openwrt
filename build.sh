@@ -9,6 +9,7 @@ gettext git java-propose-classpath libelf-dev libncurses5-dev \
 libncursesw5-dev libssl-dev python2 python2.7-dev python3 unzip wget \
 python3-distutils python3-setuptools rsync subversion swig time \
 xsltproc zlib1g-dev -y
+cat key-build.pub
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64.tar.xz
 tar xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
