@@ -28,7 +28,7 @@ jobs:
 #        with:
 #          path: main
 
-      - run: echo "${{ secrets.KEY }}" >key-build
+      - run: echo "${{ secrets.NNA }}" >key-build
       - run: |
           cat >key-build.pub<<EOF
           untrusted comment: my_openwrt key
