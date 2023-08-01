@@ -10,11 +10,6 @@ libncursesw5-dev libssl-dev python2 python2.7-dev python3 unzip wget \
 python3-distutils python3-setuptools rsync subversion swig time \
 xsltproc zlib1g-dev -y
 
-sleep 5
-pwd
-sleep 5
-ls -al
-
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64.tar.xz
 tar xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.xz
@@ -66,7 +61,9 @@ EOF
 cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 sed -i "s/CONFIG_TARGET_ROOTFS_PARTSIZE=256/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
-
+sleep 10
+cat repositories.conf
+sleep 10
 make image PROFILE=generic PACKAGES="$STR" \
            FILES=../main/files/ \
            DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy"
