@@ -2,7 +2,7 @@
 
 用GitHub Actions自动编译自己的OpenWrt固件
 
-GitHub Actions的官方文档 https://docs.github.com/zh/actions/quickstart
+[GitHub Actions的官方文档](https://docs.github.com/zh/actions/quickstart)
 
 + 自动编译package目录里的每个软件包，注意，如果Makefile定义的包名字和官方Feeds冲突，将不会编译
 需要在build.sh里额外执行
