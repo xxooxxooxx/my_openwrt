@@ -27,8 +27,8 @@ sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
-./scripts/feeds uninstall tinc
-./scripts/feeds install -p custom tinc
+#./scripts/feeds uninstall tinc
+#./scripts/feeds install -p custom tinc
 
 . ../main/DEFAULT
 STR=$DEFAULT
@@ -61,7 +61,7 @@ EOF
 cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
 sed -i "/option check_signature/d" $(pwd)/repositories.conf
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
-sed -i "s/CONFIG_TARGET_ROOTFS_PARTSIZE=104/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
+sed -i "s/^CONFIG_TARGET_ROOTFS_PARTSIZE=.*$/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
 
 make image PROFILE=generic PACKAGES="$STR" \
            FILES=../main/files/ \
