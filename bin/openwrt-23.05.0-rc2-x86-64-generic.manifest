@@ -299,6 +299,7 @@ strongswan-mod-xcbc - 5.9.10-5
 strongswan-swanctl - 5.9.10-5
 switch-lan-play - 0.2.3-1
 terminfo - 6.4-2
+tinc - 1.1pre18-2
 tor - 0.4.7.13-1
 trojan - 1.16.0-1
 ubox - 2022-08-13-4c7b720b-2
