@@ -188,13 +188,11 @@ luci - git-23.051.66410-a505bb1
 luci-app-firewall - git-23.095.34229-148759a5
 luci-app-openvpn - git-23.013.73089-25983b9
 luci-app-opkg - git-23.009.82915-ec3aac4
-luci-app-shadowsocks-libev - git-23.114.22396-80da117
 luci-app-switch-lan-play - 0.0.3-1
 luci-base - git-23.118.79121-6fb185f
 luci-compat - git-22.297.83017-673f382
 luci-i18n-base-zh-cn - git-23.184.28682-aa50d53
 luci-i18n-openvpn-zh-cn - git-23.184.28682-aa50d53
-luci-i18n-shadowsocks-libev-zh-cn - git-23.184.28682-aa50d53
 luci-lib-base - git-22.308.54612-9118452
 luci-lib-ip - git-20.250.76529-62505bd
 luci-lib-jsonc - git-22.079.54693-45f411b
@@ -301,7 +299,6 @@ strongswan-mod-xcbc - 5.9.10-5
 strongswan-swanctl - 5.9.10-5
 switch-lan-play - 0.2.3-1
 terminfo - 6.4-2
-tinc - 1.1pre18-2
 tor - 0.4.7.13-1
 trojan - 1.16.0-1
 ubox - 2022-08-13-4c7b720b-2
