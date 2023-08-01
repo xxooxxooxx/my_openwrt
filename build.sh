@@ -63,7 +63,7 @@ sed -i "/option check_signature/d" $(pwd)/repositories.conf
 sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 sed -i "s/^CONFIG_TARGET_ROOTFS_PARTSIZE=.*$/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
 
-make image PROFILE=generic PACKAGES="$STR" \
+make image PROFILE=Generic PACKAGES="$STR" \
            FILES=../main/files/ \
            DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy swanctl"
 
