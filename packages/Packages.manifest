@@ -1,17 +1,18 @@
 Package: 3proxy
 Version: 0.8.13-1
-Depends: libc, libpthread, libopenssl1.1
+Depends: libc, libpthread, libopenssl3
 Source: feeds/custom/package/3proxy
 SourceName: 3proxy
 License: GPLv2
 LicenseFiles: LICENSE
 Section: net
+SourceDateEpoch: 1690949629
 Maintainer: xo
 Architecture: x86_64
-Installed-Size: 94615
+Installed-Size: 98058
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 95261
-SHA256sum: f5851d056911a5791270be1194c5911924cfa49a6ed614fa0c272816b008b0c2
+Size: 98802
+SHA256sum: 987bf1b7ad799a026e71e4564ed672649e3c26de24a740584cab0792a848cd3a
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-switch-lan-play
@@ -20,11 +21,12 @@ Depends: libc, switch-lan-play
 Source: feeds/custom/package/luci-app-switch-lan-play
 SourceName: luci-app-switch-lan-play
 Section: luci
+SourceDateEpoch: 1690949629
 Architecture: all
-Installed-Size: 1444
+Installed-Size: 1451
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2251
-SHA256sum: d5c9874d66c0d8e1d937ec053a00dd4e881583ee22625801233119402e087db0
+Size: 2288
+SHA256sum: 108a828ec35fc82a7b239e310b4b83f75dde69ce710af3754731179a989965ac
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: switch-lan-play
@@ -35,26 +37,28 @@ SourceName: switch-lan-play
 License: GPLv3
 LicenseFiles: LICENSE.TXT
 Section: net
+SourceDateEpoch: 1690949629
 Architecture: x86_64
-Installed-Size: 228758
+Installed-Size: 225351
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 229472
-SHA256sum: ab56b033d82674347f99c3348f260581b7a690cfe878ade878eb34d379c233f6
+Size: 226120
+SHA256sum: b04292057ff5784cb9d3369dd7a09a03ddba466051b6ec3477afd37ed4c0066b
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
 Version: 1.16.0-1
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-program_options, boost-date_time
 Source: feeds/custom/package/trojan
 SourceName: trojan
 License: GPL-3.0
 Section: net
+SourceDateEpoch: 1690949629
 Maintainer: GreaterFire
 Architecture: x86_64
-Installed-Size: 277407
+Installed-Size: 312923
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 278268
-SHA256sum: 1731dc19cbd04b8bf0152920f1809189aafe7fa5ca1064871ba8754e45b4dd13
+Size: 313840
+SHA256sum: 0ae7974c0594557f70686ed7f5a25176fcdefd15a76139a1d3b68e252fc18fad
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -65,11 +69,12 @@ SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
+SourceDateEpoch: 1690949629
 Maintainer: HotBird64
 Architecture: x86_64
-Installed-Size: 51295
+Installed-Size: 51518
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 51964
-SHA256sum: 7a9e5c5fd6a9001f032e9a9f0e45f9be1a047bcfc025fedef6c0fd06e91174c2
+Size: 52212
+SHA256sum: d6ce44f0cfc5fdf9952dd480904aa2d37f84dafc4a1f54d0b9e8fed08c001108
 Description:  vlmcsd is a KMS Emulator in C.
 
