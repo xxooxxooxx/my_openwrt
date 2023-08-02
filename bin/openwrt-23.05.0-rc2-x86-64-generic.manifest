@@ -35,7 +35,7 @@ iptables-mod-ipopt - 1.8.8-1
 iptables-mod-ipsec - 1.8.8-1
 iptables-mod-nat-extra - 1.8.8-1
 iptables-mod-tproxy - 1.8.8-1
-iptables-zz-legacy - 1.8.8-1
+iptables-nft - 1.8.8-1
 jansson4 - 2.14-3
 jshn - 2023-05-23-75a3b870-1
 jsonfilter - 2018-02-04-c7e938d6-1
@@ -117,6 +117,7 @@ kmod-nf-reject - 5.15.118-1
 kmod-nf-reject6 - 5.15.118-1
 kmod-nf-tproxy - 5.15.118-1
 kmod-nfnetlink - 5.15.118-1
+kmod-nft-compat - 5.15.118-1
 kmod-nft-core - 5.15.118-1
 kmod-nft-fib - 5.15.118-1
 kmod-nft-nat - 5.15.118-1
@@ -156,6 +157,7 @@ libgnutls - 3.8.0-3
 libip4tc2 - 1.8.8-1
 libip6tc2 - 1.8.8-1
 libipset13 - 7.17-1
+libiptext-nft0 - 1.8.8-1
 libiptext0 - 1.8.8-1
 libiptext6-0 - 1.8.8-1
 libiwinfo-data - 2023-05-17-c9f5c3f7-1
@@ -339,4 +341,5 @@ usign - 2020-05-23-f1f65026-1
 vlmcsd - svn1113-1
 vpnc-scripts - 20151220-3
 xtables-legacy - 1.8.8-1
+xtables-nft - 1.8.8-1
 zlib - 1.2.13-1
