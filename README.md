@@ -5,7 +5,7 @@
 特性，基于官方固件可使用官方源安装软件包  
 也可自己添加官方没有的包，比如自己开发的，把软件包目录放package即可自动编译并自动集成到固件里  
 也可以直接使用网上已存在的仓库，见build.sh 27行  
-DEFAULT 定义需要集成到固件里的软件包(官方，用空格分隔)名字  
+DEFAULT 定义需要集成到固件里的软件包(官方)名字  
 
 [GitHub Actions的官方文档](https://docs.github.com/zh/actions/quickstart)
 
