@@ -35,8 +35,8 @@ sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)
 ./scripts/feeds install -a -p openclash
 
 make defconfig
-make package/luci-base/compile V=s -j
-make package/luci-app-openclash/compile V=s -j
+make package/luci-base/compile -j
+make package/luci-app-openclash/compile -j
 
 . ../main/DEFAULT
 STR=$DEFAULT
@@ -45,7 +45,7 @@ STR="${STR} luci-app-openclash"
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
-#    make package/${i##*/}/{clean,compile} -j
+#    make package/${i##*/}/{clean,compile} V=s -j
     make package/${i##*/}/compile -j
     STR="${STR} ${i##*/}"
   fi
