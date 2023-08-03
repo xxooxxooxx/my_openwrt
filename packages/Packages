@@ -4,10 +4,10 @@ Depends: libc, libpthread, libopenssl3
 License: GPLv2
 Section: net
 Architecture: x86_64
-Installed-Size: 98060
+Installed-Size: 98061
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 98791
-SHA256sum: 33874dbbd26bfd258462a4e4ed3cd17a7595ab3f0d8a2651e7b25f82b1d94361
+Size: 98800
+SHA256sum: 60f414b188f6dabad2e3f3d711bc3047b33b10b7bdc7418c77d4d4fdf5bb1134
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-openclash
@@ -29,7 +29,7 @@ Architecture: all
 Installed-Size: 1451
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
 Size: 2293
-SHA256sum: aa7da22cea67d6b84c20d648e4983058cf40eb423b3a22278e833339563779e8
+SHA256sum: 4eb88298177f72c0e98d9642db1eac1f6bcaff3319c48c1f361dc4cab4eb39b4
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: switch-lan-play
@@ -40,8 +40,8 @@ Section: net
 Architecture: x86_64
 Installed-Size: 225347
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226114
-SHA256sum: f67daaa997d45283adab7650e484ce7cc4c7934cd9f71bf8d732558ab534a4da
+Size: 226108
+SHA256sum: b173f98bd33fed591f6df4b6e185424341ec96457744ea5622d58d8e4e494d19
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -50,10 +50,10 @@ Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-p
 License: GPL-3.0
 Section: net
 Architecture: x86_64
-Installed-Size: 312924
+Installed-Size: 312923
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 313836
-SHA256sum: 4909162fd851e3c27ec47d4c947edc035abeb92b3ccfcbc03c5555abbc5c444b
+Size: 313852
+SHA256sum: 7f1c96645860cc024884e1a354162574aa8543d83355fadadca74bcb776850cc
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -62,9 +62,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: x86_64
-Installed-Size: 51516
+Installed-Size: 51519
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52254
-SHA256sum: ca1d5b0c7e69d8edde10acacf125533f4dc5c0a6c3c4c9b3d9a93c7184c5d360
+Size: 52237
+SHA256sum: 6b02b0060aabef0a6c998aa100eef5ba3b423fdb25f5bc3b60bdc52c0d5ff559
 Description:  vlmcsd is a KMS Emulator in C.
 
