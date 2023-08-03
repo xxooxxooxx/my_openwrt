@@ -34,12 +34,12 @@ sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)
 ./scripts/feeds update openclash
 ./scripts/feeds install -a -p openclash
 
-. ../main/DEFAULT
-STR=$DEFAULT
-
 make defconfig
 make package/luci-base/compile V=s -j
 make package/luci-app-openclash/compile V=s -j
+
+. ../main/DEFAULT
+STR=$DEFAULT
 STR="${STR} luci-app-openclash"
 
 #for i in ../package/* ; do
