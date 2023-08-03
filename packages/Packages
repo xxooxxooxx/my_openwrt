@@ -4,21 +4,32 @@ Depends: libc, libpthread, libopenssl3
 License: GPLv2
 Section: net
 Architecture: x86_64
-Installed-Size: 98059
+Installed-Size: 98060
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 98781
-SHA256sum: 47b663cede191dfdeb1b915d7370cdf29d973ea1368060d9ee0872b2eca589e1
+Size: 98791
+SHA256sum: 33874dbbd26bfd258462a4e4ed3cd17a7595ab3f0d8a2651e7b25f82b1d94361
 Description:  3APA3A 3proxy tiny proxy server
+
+Package: luci-app-openclash
+Version: 0.45.129-beta
+Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ipset, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
+Section: opt
+Architecture: all
+Installed-Size: 4270362
+Filename: luci-app-openclash_0.45.129-beta_all.ipk
+Size: 4254902
+SHA256sum: a6327b4164cf507c03f1b05f398ef9fda4c59ec8998cc20c1c666d902cb96b8f
+Description:  A LuCI support for clash
 
 Package: luci-app-switch-lan-play
 Version: 0.0.3-1
 Depends: libc, switch-lan-play
 Section: luci
 Architecture: all
-Installed-Size: 1450
+Installed-Size: 1451
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2294
-SHA256sum: 58054ff656016933d4b993587a492e52ca8afc6d559970dc8028bb405fe4d2da
+Size: 2293
+SHA256sum: aa7da22cea67d6b84c20d648e4983058cf40eb423b3a22278e833339563779e8
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: switch-lan-play
@@ -27,10 +38,10 @@ Depends: libc, libpcap1, libpthread, libstdcpp6, libatomic1
 License: GPLv3
 Section: net
 Architecture: x86_64
-Installed-Size: 225340
+Installed-Size: 225347
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226112
-SHA256sum: 9692d831145e4009e3c262b54d61bb60f757bec7e7ceb25e4e6ed1bb8d29d311
+Size: 226114
+SHA256sum: f67daaa997d45283adab7650e484ce7cc4c7934cd9f71bf8d732558ab534a4da
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -39,10 +50,10 @@ Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-p
 License: GPL-3.0
 Section: net
 Architecture: x86_64
-Installed-Size: 312922
+Installed-Size: 312924
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 313838
-SHA256sum: 2d2f55c35f7f116e095583c7716512274dd23c2e43870becf30a17312b49cd12
+Size: 313836
+SHA256sum: 4909162fd851e3c27ec47d4c947edc035abeb92b3ccfcbc03c5555abbc5c444b
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -51,9 +62,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: x86_64
-Installed-Size: 51521
+Installed-Size: 51516
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52288
-SHA256sum: 031530ecd7352b09700ba1415dc4546491b88047e85a11a509b0a08193c7b463
+Size: 52254
+SHA256sum: ca1d5b0c7e69d8edde10acacf125533f4dc5c0a6c3c4c9b3d9a93c7184c5d360
 Description:  vlmcsd is a KMS Emulator in C.
 
