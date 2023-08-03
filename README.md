@@ -2,6 +2,9 @@
 
 用GitHub Actions自动编译自己的OpenWrt固件
 
+特性，基于官方固件可使用官方源安装软件包，也可自己添加官方没有的包，比如自己开发的，把软件包目录放package即可自动编译并自动集成到固件里
+或者直接使用网上已存在的仓库，见build.sh 27行
+
 [GitHub Actions的官方文档](https://docs.github.com/zh/actions/quickstart)
 
 + 自动编译package目录里的每个软件包，注意，如果Makefile定义的包名字和官方Feeds冲突，将不会编译
