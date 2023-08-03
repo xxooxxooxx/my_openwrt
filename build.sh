@@ -24,16 +24,24 @@ cp ../key-build* .
 #echo "src-link custom $H_PATH/package" >> $(pwd)/feeds.conf.default
 #sed -i "\$a\src-link custom ${H_PATH}/package" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
+sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
 #./scripts/feeds uninstall tinc
 #./scripts/feeds install -p custom tinc
 
+./scripts/feeds update openclash
+./scripts/feeds install -a -p openclash
+
 . ../main/DEFAULT
 STR=$DEFAULT
 
 make defconfig
+make package/luci-base/compile V=s -j
+make package/luci-app-openclash/compile V=s -j
+STR="${STR} luci-app-openclash"
+
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
@@ -42,6 +50,8 @@ for i in feeds/custom/package/* ; do
     STR="${STR} ${i##*/}"
   fi
 done
+
+cp -a bin/packages/x86_64/openclash/*.ipk bin/packages/x86_64/custom/
 
 make package/index V=sc
 cd - &>/dev/null
