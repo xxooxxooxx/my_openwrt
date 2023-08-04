@@ -43,10 +43,9 @@ STR=$DEFAULT
 STR="${STR} luci-app-openclash"
 
 # install theme-argon
-cd package
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
-cd ..
+mv luci-app-argon-config luci-theme-argon -t package
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make package/luci-theme-argon/compile -j
