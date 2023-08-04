@@ -44,13 +44,15 @@ STR="${STR} luci-app-openclash"
 
 # install theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git
-git clone https://github.com/jerrykuku/luci-app-argon-config.git
-mv luci-app-argon-config luci-theme-argon -t package
-./scripts/feeds update -a
-./scripts/feeds install -a
+#git clone https://github.com/jerrykuku/luci-app-argon-config.git
+#mv luci-app-argon-config luci-theme-argon -t package
+mv luci-theme-argon package
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 make package/luci-theme-argon/compile -j
-make package/luci-app-argon-config/compile -j
-STR="${STR} luci-theme-argon luci-app-argon-config"
+#make package/luci-app-argon-config/compile -j
+STR="${STR} luci-theme-argon"
+#STR="${STR} luci-theme-argon luci-app-argon-config"
 
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
@@ -62,7 +64,7 @@ for i in feeds/custom/package/* ; do
 done
 
 cp -a bin/packages/x86_64/base/luci-theme-argon*.ipk bin/packages/x86_64/custom/
-cp -a bin/packages/x86_64/base/luci-app-argon-config*.ipk bin/packages/x86_64/custom/
+#cp -a bin/packages/x86_64/base/luci-app-argon-config*.ipk bin/packages/x86_64/custom/
 
 cp -a bin/packages/x86_64/openclash/*.ipk bin/packages/x86_64/custom/
 
