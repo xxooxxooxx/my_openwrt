@@ -42,6 +42,17 @@ make package/luci-app-openclash/compile -j
 STR=$DEFAULT
 STR="${STR} luci-app-openclash"
 
+# install theme-argon
+cd package
+git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/jerrykuku/luci-app-argon-config.git
+cd ..
+./scripts/feeds update -a
+./scripts/feeds install -a
+make package/luci-theme-argon/compile -j
+make package/luci-app-argon-config/compile -j
+STR="${STR} luci-theme-argon luci-app-argon-config"
+
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
@@ -50,6 +61,9 @@ for i in feeds/custom/package/* ; do
     STR="${STR} ${i##*/}"
   fi
 done
+
+cp -a bin/packages/x86_64/base/luci-theme-argon*.ipk bin/packages/x86_64/custom/
+cp -a bin/packages/x86_64/base/luci-app-argon-config*.ipk bin/packages/x86_64/custom/
 
 cp -a bin/packages/x86_64/openclash/*.ipk bin/packages/x86_64/custom/
 
