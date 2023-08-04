@@ -6,29 +6,14 @@ SourceName: 3proxy
 License: GPLv2
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1691123235
+SourceDateEpoch: 1691174804
 Maintainer: xo
 Architecture: x86_64
-Installed-Size: 98058
+Installed-Size: 98061
 Filename: 3proxy_0.8.13-1_x86_64.ipk
 Size: 98788
-SHA256sum: 0c4799e2201f83a7333cda996f6a872fd080ae945fc342f2fc7fa8a2e40f705b
+SHA256sum: c2bdb110262852d7f45e42067dfd2445319475535dda24a99d9b757f36e069fa
 Description:  3APA3A 3proxy tiny proxy server
-
-Package: luci-app-argon-config
-Version: 1.0
-Depends: libc, luci-theme-argon
-Source: package/luci-app-argon-config
-SourceName: luci-app-argon-config
-Section: luci
-SourceDateEpoch: 1686813372
-Maintainer: OpenWrt LuCI community
-Architecture: all
-Installed-Size: 3123
-Filename: luci-app-argon-config_1.0_all.ipk
-Size: 3974
-SHA256sum: 9945d35fec39c92c213dae1d5873be196bf3641735b08bd101ed4c2c26930538
-Description:  LuCI app for Argon theme configuration
 
 Package: luci-app-openclash
 Version: 0.45.129-beta
@@ -51,28 +36,13 @@ Depends: libc, switch-lan-play
 Source: feeds/custom/package/luci-app-switch-lan-play
 SourceName: luci-app-switch-lan-play
 Section: luci
-SourceDateEpoch: 1691123235
+SourceDateEpoch: 1691174804
 Architecture: all
 Installed-Size: 1451
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2294
-SHA256sum: 8bcee2d4a67579d5bf1c3c8d5f73294f04ea383ba12674f05d1605591a57466d
+Size: 2297
+SHA256sum: 0291c2b5c6a8aebf16753408df939da5e2d4353bfdd37d787de152b7658819e6
 Description:  LuCI web-interface for Switch Lan Play Client
-
-Package: luci-theme-argon
-Version: 2.3.1
-Depends: libc, curl, jsonfilter, luci-lua-runtime
-Source: package/luci-theme-argon
-SourceName: luci-theme-argon
-Section: luci
-SourceDateEpoch: 1686419048
-Maintainer: OpenWrt LuCI community
-Architecture: all
-Installed-Size: 336255
-Filename: luci-theme-argon_2.3.1_all.ipk
-Size: 336888
-SHA256sum: 71ffbee571b2d45a5aa3a685184038ad126e1dbfff5949d3182a22400ef6d97f
-Description:  Argon Theme
 
 Package: switch-lan-play
 Version: 0.2.3-1
@@ -82,12 +52,12 @@ SourceName: switch-lan-play
 License: GPLv3
 LicenseFiles: LICENSE.TXT
 Section: net
-SourceDateEpoch: 1691123235
+SourceDateEpoch: 1691174804
 Architecture: x86_64
 Installed-Size: 225344
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226128
-SHA256sum: 0a522d5f1655cf9758d1a00dc006d0e6735073059b3f93d5600c03215ebf9487
+Size: 226102
+SHA256sum: e76f14aba382d73a154d543091e764a45ecb05bd90df234790998d1bb6a978f1
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -97,13 +67,13 @@ Source: feeds/custom/package/trojan
 SourceName: trojan
 License: GPL-3.0
 Section: net
-SourceDateEpoch: 1691123235
+SourceDateEpoch: 1691174804
 Maintainer: GreaterFire
 Architecture: x86_64
 Installed-Size: 312925
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 313832
-SHA256sum: d07f345e836c419e7973e36742e2010cf6faef512cac70dd5fdbd02f3152a3d1
+Size: 313847
+SHA256sum: 1e61894ebe5ad699d0e3da32a13fdc957d0d044f34d81f794bdf31d48fadd73c
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -114,12 +84,12 @@ SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1691123235
+SourceDateEpoch: 1691174804
 Maintainer: HotBird64
 Architecture: x86_64
-Installed-Size: 51519
+Installed-Size: 51522
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52236
-SHA256sum: 2ecdb99fe7a31eef3ee8673b1019d4050716751be5b5ca9d46ba079b897bf198
+Size: 52176
+SHA256sum: 62035f9ebeb9dd4a8c0be1dfba3c839b04463a0e7aea5c6d26e7a172c6349cdb
 Description:  vlmcsd is a KMS Emulator in C.
 
