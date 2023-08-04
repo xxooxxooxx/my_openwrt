@@ -4,10 +4,10 @@ Depends: libc, libpthread, libopenssl3
 License: GPLv2
 Section: net
 Architecture: x86_64
-Installed-Size: 98060
+Installed-Size: 98058
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 98796
-SHA256sum: bfe726ed76a0e9ad9fbd8826fd5398211f9d3fbe672d0579b0a1b8f6b862bc22
+Size: 98788
+SHA256sum: 0c4799e2201f83a7333cda996f6a872fd080ae945fc342f2fc7fa8a2e40f705b
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-argon-config
@@ -37,10 +37,10 @@ Version: 0.0.3-1
 Depends: libc, switch-lan-play
 Section: luci
 Architecture: all
-Installed-Size: 1450
+Installed-Size: 1451
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2290
-SHA256sum: f34347a272733271a5afe85776f40e2b6a5df433739d5abe9bf1e9d1189a6923
+Size: 2294
+SHA256sum: 8bcee2d4a67579d5bf1c3c8d5f73294f04ea383ba12674f05d1605591a57466d
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: luci-theme-argon
@@ -60,10 +60,10 @@ Depends: libc, libpcap1, libpthread, libstdcpp6, libatomic1
 License: GPLv3
 Section: net
 Architecture: x86_64
-Installed-Size: 225350
+Installed-Size: 225344
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226113
-SHA256sum: cffd6ab5f01aaf3f46c7f33240277ce7ffef5c37461121eb78d6062c6ff2caa4
+Size: 226128
+SHA256sum: 0a522d5f1655cf9758d1a00dc006d0e6735073059b3f93d5600c03215ebf9487
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -72,10 +72,10 @@ Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-p
 License: GPL-3.0
 Section: net
 Architecture: x86_64
-Installed-Size: 312924
+Installed-Size: 312925
 Filename: trojan_1.16.0-1_x86_64.ipk
 Size: 313832
-SHA256sum: 2952cd549f44b7c619dd71be16b615ab70434a97214ed0144b2feebdf099265a
+SHA256sum: d07f345e836c419e7973e36742e2010cf6faef512cac70dd5fdbd02f3152a3d1
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -84,9 +84,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: x86_64
-Installed-Size: 51518
+Installed-Size: 51519
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52234
-SHA256sum: cd9734aa630cd647d1a46b31d0e980866c6a02e4d006deb06bcb58e0e7144e91
+Size: 52236
+SHA256sum: 2ecdb99fe7a31eef3ee8673b1019d4050716751be5b5ca9d46ba079b897bf198
 Description:  vlmcsd is a KMS Emulator in C.
 

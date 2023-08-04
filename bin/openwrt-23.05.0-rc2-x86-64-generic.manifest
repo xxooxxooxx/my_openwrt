@@ -237,7 +237,6 @@ luci-proto-ppp - git-21.158.38888-88b9d84
 luci-proto-relay - git-19.307.61018-284918b
 luci-theme-argon - 2.3.1
 luci-theme-bootstrap - git-23.085.34270-d94a728
-luci-theme-openwrt - git-23.009.43662-21b4065
 mkf2fs - 1.16.0-1
 mtd - 26
 netifd - 2023-06-04-ec9dba72-1
