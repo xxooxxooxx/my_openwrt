@@ -211,6 +211,7 @@ libyaml - 0.2.5-1
 logd - 2022-08-13-4c7b720b-2
 lua - 5.1.5-10
 luci - git-23.051.66410-a505bb1
+luci-app-argon-config - 1.0
 luci-app-firewall - git-23.208.40260-9504081
 luci-app-openclash - 0.45.129-beta
 luci-app-openvpn - git-23.013.73089-25983b9
@@ -234,6 +235,7 @@ luci-proto-ipv6 - git-21.148.48881-79947af
 luci-proto-openconnect - git-23.088.48817-b8ee305
 luci-proto-ppp - git-21.158.38888-88b9d84
 luci-proto-relay - git-19.307.61018-284918b
+luci-theme-argon - 2.3.1
 luci-theme-bootstrap - git-23.085.34270-d94a728
 luci-theme-openwrt - git-23.009.43662-21b4065
 mkf2fs - 1.16.0-1
