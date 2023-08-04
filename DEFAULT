@@ -1,4 +1,4 @@
-export DEFAULT="luci luci-i18n-base-zh-cn -dnsmasq dnsmasq-full ipset ipset-dns \
+export DEFAULT="luci luci-i18n-base-zh-cn luci-theme-openwrt-2020 -dnsmasq dnsmasq-full ipset ipset-dns \
                 tor ca-bundle ca-certificates bash curl wget git-http python3 kmod-tcp-bbr 6in4 tinc \
                 iptables iptables-mod-filter iptables-mod-conntrack-extra iptables-mod-nat-extra iptables-mod-tproxy iptables-mod-ipopt iptables-mod-geoip \
                 strongswan-default strongswan-mod-md4 strongswan-mod-openssl strongswan-mod-uci strongswan-mod-eap-mschapv2 strongswan-mod-eap-identity kmod-crypto-gcm openssl-util \
