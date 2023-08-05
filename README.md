@@ -38,7 +38,7 @@ wget https://xxooxxooxx.github.io/my_openwrt/packages/public.key
 opkg-key add public.key
 opkg update
 ```
-+ 安装到虚拟机
++ 安装到虚拟机 Proxmox VE
 ```
 wget https://github.com/xxooxxooxx/my_openwrt/raw/gh-pages/bin/openwrt-23.05.0-rc2-x86-64-generic-ext4-combined.img.gz
 gunzip openwrt-23.05.0-rc2-x86-64-generic-ext4-combined.img.gz
