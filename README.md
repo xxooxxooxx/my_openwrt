@@ -40,7 +40,9 @@ opkg update
 ```
 + 安装到虚拟机 Proxmox VE
 ```
-wget https://github.com/xxooxxooxx/my_openwrt/raw/gh-pages/bin/openwrt-23.05.0-rc2-x86-64-generic-ext4-combined.img.gz
-gunzip openwrt-23.05.0-rc2-x86-64-generic-ext4-combined.img.gz
-qm importdisk <vmid> openwrt-23.05.0-rc2-x86-64-generic-ext4-combined.img local-lvm
+SDK_VERSION=23.05.0-rc2
+
+wget https://github.com/xxooxxooxx/my_openwrt/raw/gh-pages/bin/openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
+gunzip openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
+qm importdisk <vmid> openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img local-lvm
 ```
