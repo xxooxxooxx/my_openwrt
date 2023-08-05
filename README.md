@@ -33,7 +33,7 @@ bin目录即是编译好的固件
 
 + 也可以单独安装自编译软件包
 ```
-echo "src/gz custom https://xxooxxooxx.github.io/my_openwrt/packages" >>/etc/opkg/distfeeds.conf
+echo "src/gz custom https://xxooxxooxx.github.io/my_openwrt/packages" >>/etc/opkg/customfeeds.conf
 wget https://xxooxxooxx.github.io/my_openwrt/packages/public.key
 opkg-key add public.key
 opkg update
