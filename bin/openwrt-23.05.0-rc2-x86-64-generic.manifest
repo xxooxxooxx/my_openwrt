@@ -301,6 +301,7 @@ strongswan-charon - 5.9.10-5
 strongswan-default - 5.9.10-5
 strongswan-mod-aes - 5.9.10-5
 strongswan-mod-attr - 5.9.10-5
+strongswan-mod-bypass-lan - 5.9.10-5
 strongswan-mod-connmark - 5.9.10-5
 strongswan-mod-constraints - 5.9.10-5
 strongswan-mod-des - 5.9.10-5
