@@ -74,14 +74,14 @@ cd - &>/dev/null
 cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64/bin/packages/x86_64/custom packages
 #cp -a ./main/bin packages
 
-cat >./main/files/etc/opkg/distfeeds.conf <<-EOF
-	src/gz openwrt_core https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/packages
-	src/gz openwrt_base https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/base
-	src/gz openwrt_luci https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/luci
-	src/gz openwrt_packages https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/packages
-	src/gz openwrt_routing https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/routing
-	src/gz openwrt_telephony https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/telephony
-EOF
+#cat >./main/files/etc/opkg/distfeeds.conf <<-EOF
+#	src/gz openwrt_core https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/packages
+#	src/gz openwrt_base https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/base
+#	src/gz openwrt_luci https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/luci
+#	src/gz openwrt_packages https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/packages
+#	src/gz openwrt_routing https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/routing
+#	src/gz openwrt_telephony https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/telephony
+#EOF
 
 cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
 sed -i "/option check_signature/d" $(pwd)/repositories.conf
