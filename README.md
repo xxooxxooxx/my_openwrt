@@ -46,3 +46,21 @@ wget https://github.com/xxooxxooxx/my_openwrt/raw/gh-pages/bin/openwrt-$SDK_VERS
 gunzip openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
 qm importdisk <vmid> openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img local-lvm
 ```
+
++ OpenWrt 22.03.0+  
+Firewall4 based on nftables  
+https://openwrt.org/docs/guide-user/firewall/firewall_configuration  
+Config include section with shell script  
+
+```
+uci add firewall include
+uci set firewall.@include[-1].enabled=1
+uci set firewall.@include[-1].type='script'
+uci set firewall.@include[-1].path='/etc/firewall.user'
+uci set firewall.@include[-1].fw4_compatible=1
+uci commit firewall
+
+opkg update
+opkg install iptables
+/etc/init.d/firewall restart
+```
