@@ -4,21 +4,21 @@ Depends: libc, libpthread, libopenssl3
 License: GPLv2
 Section: net
 Architecture: x86_64
-Installed-Size: 98059
+Installed-Size: 98048
 Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 98785
-SHA256sum: 84114fff6c00df74c0990fd4d59dce6e9a798871a229e06c2043b5abc99c559a
+Size: 98770
+SHA256sum: 7f79da4569d123651e65cf8a69a95e4478a098967bd3fae7071c8e44373cab2a
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-openclash
-Version: 0.45.141-beta
+Version: 0.46.001-beta
 Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ipset, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
 Section: opt
 Architecture: all
-Installed-Size: 4365233
-Filename: luci-app-openclash_0.45.141-beta_all.ipk
-Size: 4349543
-SHA256sum: 0cc8549724e9646996a566e884d63844ad770554aa9e1ee18551b0ba534bd243
+Installed-Size: 5652621
+Filename: luci-app-openclash_0.46.001-beta_all.ipk
+Size: 5629803
+SHA256sum: f3a691b73ac2db9f7d4a60b8d343ebcbffa4d6ffe4effde631affc0476ab9de4
 Description:  A LuCI support for clash
 
 Package: luci-app-switch-lan-play
@@ -26,10 +26,10 @@ Version: 0.0.3-1
 Depends: libc, switch-lan-play
 Section: luci
 Architecture: all
-Installed-Size: 1449
+Installed-Size: 1444
 Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2292
-SHA256sum: 5fc0b175d5dd6178737558a4234b8f43f058f2738d96a946787097c94168e003
+Size: 2270
+SHA256sum: 857901ebe9c18a535a5382635873dd9b46b3ce362bb45b44d67b1a54ee8640dd
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: strongswan-mod-bypass-lan
@@ -39,10 +39,10 @@ License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: x86_64
-Installed-Size: 3620
+Installed-Size: 3610
 Filename: strongswan-mod-bypass-lan_5.9.10-5_x86_64.ipk
-Size: 4494
-SHA256sum: 720b85f9b3df4b3dc8452d3fd338ada79d0848f624ccc4e561f3377178645646
+Size: 4458
+SHA256sum: 75a0bbed2c3a1a3d72e496926158fbb64767f905f53ba3dd58a335147fe4f919
 Description:  StrongSwan Automatically installs and updates bypass policies for locally attached subnets plugin
 
 Package: switch-lan-play
@@ -51,10 +51,10 @@ Depends: libc, libpcap1, libpthread, libstdcpp6, libatomic1
 License: GPLv3
 Section: net
 Architecture: x86_64
-Installed-Size: 225348
+Installed-Size: 225338
 Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226134
-SHA256sum: 9d7464c30d8bfddcb61c98a70f90b4627b7491a687991e605b39c2bfbd3c9349
+Size: 226100
+SHA256sum: c39bca6068ecb6c717bd39da7af6fa9ad4692c68a25a45018e3631c19b709aee
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -63,10 +63,10 @@ Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-p
 License: GPL-3.0
 Section: net
 Architecture: x86_64
-Installed-Size: 312930
+Installed-Size: 312913
 Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 313859
-SHA256sum: 37b34a9876ca15639c7af6dc745cad11f7c1567a3eaed051af6322cb9e389101
+Size: 313806
+SHA256sum: 39f075e905095a4c00626a58d128dbd65ae93b5ae474721b108349b30a715006
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -75,9 +75,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: x86_64
-Installed-Size: 51517
+Installed-Size: 51507
 Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52254
-SHA256sum: 7c3778a231a5949cec5afde4e1e58c5204380df30c8ac76ba6336d8e48681b6f
+Size: 52237
+SHA256sum: 2190448d934b6e46ceba8d69806980528d09a38ad22298d66a1d37ebfa1f82e0
 Description:  vlmcsd is a KMS Emulator in C.
 
