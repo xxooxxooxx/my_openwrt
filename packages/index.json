@@ -1,1 +1,1 @@
-{"architecture": "x86_64", "packages":{"3proxy": "0.8.13-1", "luci-app-openclash": "0.46.001-beta", "luci-app-switch-lan-play": "0.0.3-1", "strongswan-mod-bypass-lan": "5.9.10-5", "switch-lan-play": "0.2.3-1", "trojan": "1.16.0-1", "vlmcsd": "svn1113-1"}}
+{"architecture": "x86_64", "packages":{"3proxy": "0.8.13-1", "luci-app-openclash": "0.46.003-beta", "luci-app-switch-lan-play": "0.0.3-1", "strongswan-mod-bypass-lan": "5.9.10-5", "switch-lan-play": "0.2.3-1", "trojan": "1.16.0-1", "vlmcsd": "svn1113-1"}}
