@@ -1,112 +1,115 @@
 Package: 3proxy
-Version: 0.8.13-1
+Version: 0.8.13-r1
 Depends: libc, libpthread, libopenssl3
 Source: feeds/custom/package/3proxy
 SourceName: 3proxy
 License: GPLv2
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1730685183
+SourceDateEpoch: 1733899086
 Maintainer: xo
 Architecture: x86_64
-Installed-Size: 98049
-Filename: 3proxy_0.8.13-1_x86_64.ipk
-Size: 98773
-SHA256sum: a7fcdcd248581e3786feb9d7c0547a87dc2defc18fd0876ba1c3738de333e866
+Installed-Size: 225280
+Filename: 3proxy_0.8.13-r1_x86_64.ipk
+Size: 98428
+SHA256sum: 88a4effdacea886d106ce0b3280c482b056807d100c0da5266c1817886c8a3c0
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-openclash
-Version: 0.46.033-beta
-Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ipset, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
+Version: 0.46.050-rbeta
+Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
 Source: feeds/openclash/luci-app-openclash
 SourceName: luci-app-openclash
 Section: opt
-SourceDateEpoch: 1727108448
+SourceDateEpoch: 1731151403
 Maintainer: vernesong
 Architecture: all
-Installed-Size: 6156694
-Filename: luci-app-openclash_0.46.033-beta_all.ipk
-Size: 6133497
-SHA256sum: 922e70e30ee76f9741c4cab58f8052d8454b300d0e1c82733a1dfa0d5019f7c4
+Installed-Size: 20183040
+Filename: luci-app-openclash_0.46.050-rbeta_all.ipk
+Size: 7614702
+SHA256sum: fca40c0ea537d9a5b008db5e9f09897e759f7733791e67ed399f2101a9bd95c3
 Description:  A LuCI support for clash
 
 Package: luci-app-switch-lan-play
-Version: 0.0.3-1
+Version: 0.0.3-r1
 Depends: libc, switch-lan-play
 Source: feeds/custom/package/luci-app-switch-lan-play
 SourceName: luci-app-switch-lan-play
 Section: luci
-SourceDateEpoch: 1730685183
+SourceDateEpoch: 1733899086
 Architecture: all
-Installed-Size: 1443
-Filename: luci-app-switch-lan-play_0.0.3-1_all.ipk
-Size: 2270
-SHA256sum: 430f18f30380f2c765812ee6db8af6c318f1f76359d63e81fed4f5c71e1c10d1
+Installed-Size: 10240
+Filename: luci-app-switch-lan-play_0.0.3-r1_all.ipk
+Size: 2278
+SHA256sum: 3e75927953ddc3e3cb1dce4895755fd31595a0183bf603f3067779b2f5972f37
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: strongswan-mod-bypass-lan
-Version: 5.9.10-5
+Version: 5.9.10-r5
 Depends: libc, strongswan
 Source: feeds/my_strongswan/strongswan
-SourceName: strongswan-mod-bypass-lan
+SourceName: strongswan
 License: GPL-2.0-or-later
 Section: net
 SourceDateEpoch: 1691255236
+URL: http://www.strongswan.org/
 CPE-ID: cpe:/a:strongswan:strongswan
 Maintainer: Philip Prindeville <philipp@redfish-solutions.com>, Noel Kuntze <noel.kuntze@thermi.consulting>
 Architecture: x86_64
-Installed-Size: 3610
-Filename: strongswan-mod-bypass-lan_5.9.10-5_x86_64.ipk
-Size: 4458
-SHA256sum: 75a0bbed2c3a1a3d72e496926158fbb64767f905f53ba3dd58a335147fe4f919
+Installed-Size: 20480
+Filename: strongswan-mod-bypass-lan_5.9.10-r5_x86_64.ipk
+Size: 4481
+SHA256sum: 95424d85419cacf501ce32a7a88cb02af583ccd1e8f030191568fbf94dbbec29
 Description:  StrongSwan Automatically installs and updates bypass policies for locally attached subnets plugin
 
 Package: switch-lan-play
-Version: 0.2.3-1
+Version: 0.2.3-r1
 Depends: libc, libpcap1, libpthread, libstdcpp6, libatomic1
 Source: feeds/custom/package/switch-lan-play
 SourceName: switch-lan-play
 License: GPLv3
 LicenseFiles: LICENSE.TXT
 Section: net
-SourceDateEpoch: 1730685183
+SourceDateEpoch: 1733899086
 Architecture: x86_64
-Installed-Size: 225345
-Filename: switch-lan-play_0.2.3-1_x86_64.ipk
-Size: 226104
-SHA256sum: add4c875f2b448fab38fe618a705d5791fc779c3919c6231e055b4a47435b3e3
+Installed-Size: 645120
+Filename: switch-lan-play_0.2.3-r1_x86_64.ipk
+Size: 226896
+SHA256sum: d3d5b858fc31b1a1fbae9a814bedbad8a3cd6702994ac85f6eec8c85a0aa1e3c
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
-Version: 1.16.0-1
+Version: 1.16.0-r1
 Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-program_options, boost-date_time
 Source: feeds/custom/package/trojan
 SourceName: trojan
 License: GPL-3.0
 Section: net
-SourceDateEpoch: 1730685183
+SourceDateEpoch: 1733899086
+URL: https://github.com/trojan-gfw/trojan
 Maintainer: GreaterFire
 Architecture: x86_64
-Installed-Size: 312918
-Filename: trojan_1.16.0-1_x86_64.ipk
-Size: 313811
-SHA256sum: 829304a2be834d15e92f7881a70ae1568191944614d61f07d63fd9b473ce7995
+Installed-Size: 819200
+Filename: trojan_1.16.0-r1_x86_64.ipk
+Size: 311842
+SHA256sum: 862220fc267aca25fd37f4f4accbce30093e6817d468c8b98a85fd86495f1739
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
-Version: svn1113-1
+Version: svn1113-r1
 Depends: libc, libpthread
 Source: feeds/custom/package/vlmcsd
 SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1730685183
+SourceDateEpoch: 1733899086
+URL: http://forums.mydigitallife.info/threads/50234
 Maintainer: HotBird64
 Architecture: x86_64
-Installed-Size: 51509
-Filename: vlmcsd_svn1113-1_x86_64.ipk
-Size: 52151
-SHA256sum: e114f0a415dcdf144e8922765ed2be2f1d525c74d8e9f11707e64f19893bdeab
+Installed-Size: 122880
+Filename: vlmcsd_svn1113-r1_x86_64.ipk
+Size: 51959
+SHA256sum: 4775dfb44f138715e6085a5c453ed3f64afd47c81c65a63fcfbf58e6c675931f
 Description:  vlmcsd is a KMS Emulator in C.
 
