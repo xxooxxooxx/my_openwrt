@@ -6,19 +6,19 @@ Section: net
 Architecture: x86_64
 Installed-Size: 225280
 Filename: 3proxy_0.8.13-r1_x86_64.ipk
-Size: 98428
-SHA256sum: 88a4effdacea886d106ce0b3280c482b056807d100c0da5266c1817886c8a3c0
+Size: 98430
+SHA256sum: 3723f14eb068349289cad4c72fef6e20f8790732fea2f6bd0d024867e07e9ad3
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-openclash
-Version: 0.46.050-rbeta
+Version: 0.46.064
 Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
 Section: opt
 Architecture: all
-Installed-Size: 20183040
-Filename: luci-app-openclash_0.46.050-rbeta_all.ipk
-Size: 7614702
-SHA256sum: fca40c0ea537d9a5b008db5e9f09897e759f7733791e67ed399f2101a9bd95c3
+Installed-Size: 20746240
+Filename: luci-app-openclash_0.46.064_all.ipk
+Size: 7857266
+SHA256sum: 5c08242925ba216f005bcca4a96a32112ad19dac667d710edf5668680b931f55
 Description:  A LuCI support for clash
 
 Package: luci-app-switch-lan-play
@@ -28,8 +28,8 @@ Section: luci
 Architecture: all
 Installed-Size: 10240
 Filename: luci-app-switch-lan-play_0.0.3-r1_all.ipk
-Size: 2278
-SHA256sum: 3e75927953ddc3e3cb1dce4895755fd31595a0183bf603f3067779b2f5972f37
+Size: 2270
+SHA256sum: da6a46d638c1e0aee20838666b806bf47b5ec30c6b602e2592ab3a0693efe710
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: strongswan-mod-bypass-lan
@@ -54,8 +54,8 @@ Section: net
 Architecture: x86_64
 Installed-Size: 645120
 Filename: switch-lan-play_0.2.3-r1_x86_64.ipk
-Size: 226896
-SHA256sum: d3d5b858fc31b1a1fbae9a814bedbad8a3cd6702994ac85f6eec8c85a0aa1e3c
+Size: 226916
+SHA256sum: aad521798bd631b1a654414ea6f7c648d220bd08c89f135a5335a4f90eac9ca7
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -67,8 +67,8 @@ URL: https://github.com/trojan-gfw/trojan
 Architecture: x86_64
 Installed-Size: 819200
 Filename: trojan_1.16.0-r1_x86_64.ipk
-Size: 311842
-SHA256sum: 862220fc267aca25fd37f4f4accbce30093e6817d468c8b98a85fd86495f1739
+Size: 311816
+SHA256sum: fc63d49a558b490a35031dddc7226b57bd1998bf9b0dccaa0cfdcce39b3c7e2e
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -80,7 +80,7 @@ URL: http://forums.mydigitallife.info/threads/50234
 Architecture: x86_64
 Installed-Size: 122880
 Filename: vlmcsd_svn1113-r1_x86_64.ipk
-Size: 51959
-SHA256sum: 4775dfb44f138715e6085a5c453ed3f64afd47c81c65a63fcfbf58e6c675931f
+Size: 51870
+SHA256sum: 47af88a17bb283654a283e7ec9803b01939a65b2a5f07ecddd5a4a99379ad021
 Description:  vlmcsd is a KMS Emulator in C.
 
