@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-SDK_VERSION=24.10.0-rc6
+SDK_VERSION=24.10.0
 GCC_VER=13.3.0
 
 sudo apt-get update
