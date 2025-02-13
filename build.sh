@@ -25,7 +25,7 @@ cp ../key-build* .
 #sed -i "\$a\src-link custom ${H_PATH}/package" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)/feeds.conf.default
-sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
+#sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
@@ -35,9 +35,9 @@ sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-Op
 ./scripts/feeds update openclash
 ./scripts/feeds install -a -p openclash
 
-./scripts/feeds update my_strongswan
-./scripts/feeds uninstall strongswan
-./scripts/feeds install -p my_strongswan strongswan
+#./scripts/feeds update my_strongswan
+#./scripts/feeds uninstall strongswan
+#./scripts/feeds install -p my_strongswan strongswan
 
 make defconfig
 make package/luci-base/compile -j
@@ -46,7 +46,8 @@ make package/strongswan/compile -j
 
 . ../main/DEFAULT
 STR=$DEFAULT
-STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
+#STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
+STR="${STR} luci-app-openclash"
 
 # install theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon.git
