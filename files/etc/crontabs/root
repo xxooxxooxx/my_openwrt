@@ -1,2 +1,1 @@
 6 4 * * 3 /bin/opkg update && /bin/opkg list-upgradable | /bin/sed -e "s/\s.*//" | while read PKG_NAME; do /bin/opkg upgrade "${PKG_NAME}"; done
-6 4 * * 3 /opt/gfwlist2dnsmasq.sh -o /etc/dnsmasq.d/gfw.conf && /etc/init.d/dnsmasq restart
