@@ -49,18 +49,14 @@ sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)
 make defconfig
 make package/luci-base/compile -j
 
+make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
 sed -i 's/download-ci-llvm = true/download-ci-llvm = false/g' feeds/packages/lang/rust/Makefile || true
 
 echo "Patched rust Makefile:"
 grep 'download-ci-llvm' feeds/packages/lang/rust/Makefile  # 日志确认修改
 
-# 可选：清理旧 rust 构建残留（防止缓存干扰）
-rm -rf build_dir/target-*/host/rustc* \
-       staging_dir/hostpkg/stamp/.rust* 2>/dev/null || true
+make package/feeds/packages/rust/host/compile V=s -j1
 
-# 先单独 clean & prepare rust host（让目录创建 + 测试）
-make package/feeds/packages/rust/host/clean V=s || true
-make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
 make package/luci-app-openclash/compile -j
 make package/strongswan/compile -j
 
