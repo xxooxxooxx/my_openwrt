@@ -48,7 +48,7 @@ sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)
 
 make defconfig
 make package/luci-base/compile -j
-make package/luci-app-openclash/compile V=99 -j1
+make package/luci-app-openclash/compile V=99 2>&1 | tee build.log
 make package/strongswan/compile -j
 
 . ../main/DEFAULT
@@ -76,7 +76,7 @@ rm -rf build_dir/host/rustc* \
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
 #    make package/${i##*/}/{clean,compile} V=s -j
-    make package/${i##*/}/compile V=99 -j1 2>&1 | tee build.log
+    make package/${i##*/}/compile -j
     STR="${STR} ${i##*/}"
   fi
 done
