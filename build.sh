@@ -69,8 +69,8 @@ STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
-    make package/${i##*/}/{clean,compile} V=s -j
-#    make package/${i##*/}/compile -j
+#    make package/${i##*/}/{clean,compile} V=s -j
+    make package/${i##*/}/compile V=s -j
     STR="${STR} ${i##*/}"
   fi
 done
