@@ -67,6 +67,11 @@ STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
 #STR="${STR} luci-theme-argon"
 #STR="${STR} luci-theme-argon luci-app-argon-config"
 
+rm -rf build_dir/host/rustc* \
+       staging_dir/hostpkg/stamp/.rust_* \
+       staging_dir/hostpkg/.rust_* \
+       staging_dir/hostpkg/stamp/.host-rust* 2>/dev/null
+
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
