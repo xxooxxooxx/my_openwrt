@@ -76,10 +76,11 @@ rm -rf build_dir/host/rustc* \
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
 #    make package/${i##*/}/{clean,compile} V=s -j
-    make package/${i##*/}/compile V=99 -j
+    make package/${i##*/}/compile V=99 -j 2>&1 | tee rust.log
     STR="${STR} ${i##*/}"
   fi
 done
+cat rust.log
 
 #cp -a bin/packages/x86_64/base/luci-theme-argon*.ipk bin/packages/x86_64/custom/
 #cp -a bin/packages/x86_64/base/luci-app-argon-config*.ipk bin/packages/x86_64/custom/
