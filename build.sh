@@ -4,11 +4,15 @@ SDK_VERSION=24.10.0
 GCC_VER=13.3.0
 
 sudo apt-get update
-sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
-gettext git java-propose-classpath libelf-dev libncurses5-dev \
-libncursesw5-dev libssl-dev python2 python2.7-dev python3 unzip wget \
-python3-distutils python3-setuptools rsync subversion swig time \
-xsltproc zlib1g-dev zstd -y
+#sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
+#gettext git java-propose-classpath libelf-dev libncurses5-dev \
+#libncursesw5-dev libssl-dev python2 python2.7-dev python3 unzip wget \
+#python3-distutils python3-setuptools rsync subversion swig time \
+#xsltproc zlib1g-dev zstd -y
+
+sudo apt install build-essential clang flex bison g++ gawk \
+gcc-multilib g++-multilib gettext git libncurses5-dev libssl-dev \
+python3-setuptools rsync swig unzip zlib1g-dev file wget zstd -y
 
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.zst
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64.tar.zst
@@ -63,8 +67,8 @@ STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
   if [[ -d "$i" ]]; then
-#    make package/${i##*/}/{clean,compile} V=s -j
-    make package/${i##*/}/compile -j
+    make package/${i##*/}/{clean,compile} V=s -j
+#    make package/${i##*/}/compile -j
     STR="${STR} ${i##*/}"
   fi
 done
