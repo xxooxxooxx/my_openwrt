@@ -3,6 +3,8 @@
 SDK_VERSION=25.12.0-rc2
 GCC_VER=14.3.0
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+
 sudo apt-get update
 #sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
 #gettext git java-propose-classpath libelf-dev libncurses5-dev \
