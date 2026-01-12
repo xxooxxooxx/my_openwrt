@@ -48,8 +48,8 @@ sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-Op
 make defconfig
 make package/luci-base/compile -j
 
-#make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
-make package/feeds/packages/rust/host/prepare j1
+make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
+#make package/feeds/packages/rust/host/prepare j1
 sed -i 's/download-ci-llvm=true/download-ci-llvm=false/g' feeds/packages/lang/rust/Makefile || true
 
 #echo "Patched rust Makefile:"
