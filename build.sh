@@ -73,6 +73,7 @@ else
 fi
 
 make package/feeds/packages/rust/host/clean V=s || true
+make package/feeds/packages/rust/host/compile V=s -j1
 make package/luci-app-openclash/compile -j
 make package/strongswan/compile -j
 
@@ -91,11 +92,6 @@ STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
 #make package/luci-app-argon-config/compile -j
 #STR="${STR} luci-theme-argon"
 #STR="${STR} luci-theme-argon luci-app-argon-config"
-
-rm -rf build_dir/host/rustc* \
-       staging_dir/hostpkg/stamp/.rust_* \
-       staging_dir/hostpkg/.rust_* \
-       staging_dir/hostpkg/stamp/.host-rust* 2>/dev/null
 
 #for i in ../package/* ; do
 for i in feeds/custom/package/* ; do
