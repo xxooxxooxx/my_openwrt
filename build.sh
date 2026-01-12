@@ -4,6 +4,7 @@ SDK_VERSION=25.12.0-rc2
 GCC_VER=14.3.0
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+echo $PATH
 
 sudo apt-get update
 #sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
@@ -31,7 +32,7 @@ cp ../key-build* .
 #sed -i "\$a\src-link custom ${H_PATH}/package" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)/feeds.conf.default
-sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
+#sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
