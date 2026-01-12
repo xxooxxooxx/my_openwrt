@@ -29,7 +29,7 @@ jobs:
 #        with:
 #          path: main
 #      - run: |
-#          export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+##          export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 #          echo $PATH
 
       - run: echo "${{ secrets.KEY }}" >key-build
