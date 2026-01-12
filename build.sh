@@ -4,7 +4,6 @@ SDK_VERSION=25.12.0-rc2
 GCC_VER=14.3.0
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
-echo $PATH
 
 sudo apt-get update
 #sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
@@ -32,7 +31,7 @@ cp ../key-build* .
 #sed -i "\$a\src-link custom ${H_PATH}/package" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)/feeds.conf.default
-#sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
+sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
@@ -49,13 +48,13 @@ sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)
 make defconfig
 make package/luci-base/compile -j
 
-make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
+#make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
+make package/feeds/packages/rust/host/prepare j1
 sed -i 's/download-ci-llvm=true/download-ci-llvm=false/g' feeds/packages/lang/rust/Makefile || true
 
-echo "Patched rust Makefile:"
-grep 'download-ci-llvm' feeds/packages/lang/rust/Makefile  # 日志确认修改
-
-make package/feeds/packages/rust/host/compile V=s -j1
+#echo "Patched rust Makefile:"
+#grep 'download-ci-llvm' feeds/packages/lang/rust/Makefile  # 日志确认修改
+#make package/feeds/packages/rust/host/compile V=s -j1
 
 make package/luci-app-openclash/compile -j
 make package/strongswan/compile -j
