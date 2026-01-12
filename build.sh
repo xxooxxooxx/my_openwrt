@@ -49,7 +49,8 @@ sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)
 make defconfig
 make package/luci-base/compile -j
 echo "Preparing Rust host package..."
-make package/feeds/packages/rust/host/compile -j1
+make package/feeds/packages/rust/host/clean V=s || true
+make package/feeds/packages/rust/host/compile V=s -j1 || true
 
 RUST_SRC_DIR=$(find build_dir/target-*/host/ -maxdepth 1 -type d -name "rustc-*" | head -n 1)
 
@@ -70,6 +71,8 @@ else
   echo "Error: Rust source dir not found after preparing! Check logs."
   exit 1
 fi
+
+make package/feeds/packages/rust/host/clean V=s || true
 make package/luci-app-openclash/compile -j
 make package/strongswan/compile -j
 
