@@ -49,12 +49,12 @@ make defconfig
 make package/luci-base/compile -j
 
 make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
-#make package/feeds/packages/rust/host/prepare j1
 sed -i 's/download-ci-llvm=true/download-ci-llvm=false/g' feeds/packages/lang/rust/Makefile || true
+
 
 #echo "Patched rust Makefile:"
 #grep 'download-ci-llvm' feeds/packages/lang/rust/Makefile  # 日志确认修改
-#make package/feeds/packages/rust/host/compile V=s -j1
+make package/feeds/packages/rust/host/compile V=s -j1
 
 make package/luci-app-openclash/compile -j
 make package/strongswan/compile -j
