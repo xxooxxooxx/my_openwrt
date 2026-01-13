@@ -1,0 +1,86 @@
+Package: 3proxy
+Version: 0.8.13-r1
+Depends: libc, libpthread, libopenssl3
+License: GPLv2
+Section: net
+Architecture: x86_64
+Installed-Size: 225280
+Filename: 3proxy_0.8.13-r1_x86_64.ipk
+Size: 98432
+SHA256sum: bae47c6c82e528ad18544744fd858cbdc96b56a49d498723663b5370dd7d3530
+Description:  3APA3A 3proxy tiny proxy server
+
+Package: luci-app-openclash
+Version: 0.47.047
+Depends: libc, dnsmasq-full, bash, curl, ca-bundle, ip-full, ruby, ruby-yaml, kmod-tun, unzip
+Section: opt
+Architecture: all
+Installed-Size: 21811200
+Filename: luci-app-openclash_0.47.047_all.ipk
+Size: 7268570
+SHA256sum: f3949c0bfa1f282ffeb42af92fdea1691ea974837ed61856a8944b1afd3f7352
+Description:  A LuCI support for clash
+
+Package: luci-app-switch-lan-play
+Version: 0.0.3-r1
+Depends: libc, switch-lan-play
+Section: luci
+Architecture: all
+Installed-Size: 10240
+Filename: luci-app-switch-lan-play_0.0.3-r1_all.ipk
+Size: 2271
+SHA256sum: a7228abb02ce147d39ce598d6e2600be63e2bd3577c93b1cb004f627d279dbd2
+Description:  LuCI web-interface for Switch Lan Play Client
+
+Package: strongswan-mod-bypass-lan
+Version: 5.9.14-r6
+Depends: libc, strongswan
+License: GPL-2.0-or-later
+Section: net
+URL: http://www.strongswan.org/
+CPE-ID: cpe:/a:strongswan:strongswan
+Architecture: x86_64
+Installed-Size: 20480
+Filename: strongswan-mod-bypass-lan_5.9.14-r6_x86_64.ipk
+Size: 4498
+SHA256sum: 5b68aa2fef606f91a5caedc955dac598a314d96607a0d287a3d27f77ad7bb231
+Description:  StrongSwan Automatically installs and updates bypass policies for locally attached subnets plugin
+
+Package: switch-lan-play
+Version: 0.2.3-r1
+Depends: libc, libpcap1, libpthread, libstdcpp6, libatomic1
+License: GPLv3
+Section: net
+Architecture: x86_64
+Installed-Size: 645120
+Filename: switch-lan-play_0.2.3-r1_x86_64.ipk
+Size: 226918
+SHA256sum: 8273e3f6a0338de139aaee5ef66e408335d9598da57edca1fad21d90e47edb31
+Description:  Make you and your friends play games like in a LAN.
+
+Package: trojan
+Version: 1.16.0-r1
+Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-program_options, boost-date_time
+License: GPL-3.0
+Section: net
+URL: https://github.com/trojan-gfw/trojan
+Architecture: x86_64
+Installed-Size: 819200
+Filename: trojan_1.16.0-r1_x86_64.ipk
+Size: 311825
+SHA256sum: 85655945c202ddedd2f35b027fe58f20952e42b50d553fab4e33b4d4409e6105
+Description:  An unidentifiable mechanism that helps you bypass GFW
+
+Package: vlmcsd
+Version: svn1113-r1
+Depends: libc, libpthread
+License: MIT
+Section: net
+URL: http://forums.mydigitallife.info/threads/50234
+Architecture: x86_64
+Installed-Size: 122880
+Filename: vlmcsd_svn1113-r1_x86_64.ipk
+Size: 52034
+SHA256sum: 99ad487080d6bcf98648cc52c1c6cfcd2b4c8206e83a48f6bc5e8914b5936277
+Description:  vlmcsd is a KMS Emulator in C.
+
