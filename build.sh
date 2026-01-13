@@ -20,6 +20,7 @@ wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-
 wget https://downloads.openwrt.org/releases/$SDK_VERSION/targets/x86/64/openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64.tar.zst
 tar -I zstd -xf openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64.tar.zst
 tar -I zstd -xf openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64.tar.zst
+rm -f *.tar.zst
 H_PATH=$(pwd)
 
 cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64
