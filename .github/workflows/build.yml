@@ -31,6 +31,16 @@ jobs:
 #      - run: |
 #          export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 #          echo $PATH
+       - name: Free up disk space on Ubuntu runner
+         uses: jlumbroso/free-disk-space@main
+         with:
+           tool-cache: false
+           android: true
+           dotnet: true
+           haskell: true
+           large-packages: true
+           docker-images: true
+           swap-storage: true
 
       - run: echo "${{ secrets.KEY }}" >key-build
       - run: |
