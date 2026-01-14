@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=vlmcsd
-PKG_VERSION:=svn1113
+PKG_VERSION:=1113
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=HotBird64
@@ -9,8 +9,8 @@ PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_SOURCE:=$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/cokebar/vlmcsd/archive
-PKG_MD5SUM:=ea19cc1346fba447daced0224b670423
+PKG_SOURCE_URL:=https://github.com/xxooxxooxx/vlmcsd/archive
+PKG_MD5SUM:=42bd6882ff45b2f3a29489406ab360c8
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_PARALLEL:=1
