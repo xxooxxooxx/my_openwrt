@@ -6,8 +6,8 @@ Section: net
 Architecture: x86_64
 Installed-Size: 225280
 Filename: 3proxy_0.8.13-r1_x86_64.ipk
-Size: 98432
-SHA256sum: bae47c6c82e528ad18544744fd858cbdc96b56a49d498723663b5370dd7d3530
+Size: 98425
+SHA256sum: bc18aded121dffc432d18ecc7d660ea8cac2b3616554d8d140c0cab0c8fa22a3
 Description:  3APA3A 3proxy tiny proxy server
 
 Package: luci-app-openclash
@@ -28,8 +28,8 @@ Section: luci
 Architecture: all
 Installed-Size: 10240
 Filename: luci-app-switch-lan-play_0.0.3-r1_all.ipk
-Size: 2271
-SHA256sum: a7228abb02ce147d39ce598d6e2600be63e2bd3577c93b1cb004f627d279dbd2
+Size: 2269
+SHA256sum: 58064089c070ad9e31f0cd3545fc48d9595294853d56b00f452b3f371e54f35a
 Description:  LuCI web-interface for Switch Lan Play Client
 
 Package: strongswan-mod-bypass-lan
@@ -54,8 +54,8 @@ Section: net
 Architecture: x86_64
 Installed-Size: 645120
 Filename: switch-lan-play_0.2.3-r1_x86_64.ipk
-Size: 226918
-SHA256sum: 8273e3f6a0338de139aaee5ef66e408335d9598da57edca1fad21d90e47edb31
+Size: 226920
+SHA256sum: c7b6f844d08280e0ff555adc3552f344345bc4a294769b3195210ea93968c23c
 Description:  Make you and your friends play games like in a LAN.
 
 Package: trojan
@@ -67,8 +67,8 @@ URL: https://github.com/trojan-gfw/trojan
 Architecture: x86_64
 Installed-Size: 819200
 Filename: trojan_1.16.0-r1_x86_64.ipk
-Size: 311825
-SHA256sum: 85655945c202ddedd2f35b027fe58f20952e42b50d553fab4e33b4d4409e6105
+Size: 311823
+SHA256sum: edbe0142f9d4948b78b1fa061a86521716150410f09c3bd7145482a91de79c3f
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: vlmcsd
@@ -80,7 +80,7 @@ URL: http://forums.mydigitallife.info/threads/50234
 Architecture: x86_64
 Installed-Size: 122880
 Filename: vlmcsd_svn1113-r1_x86_64.ipk
-Size: 52034
-SHA256sum: 99ad487080d6bcf98648cc52c1c6cfcd2b4c8206e83a48f6bc5e8914b5936277
+Size: 52014
+SHA256sum: 71c8c2c0f4f667e96e41c46d8047efcaea2da9491536c55c74f1b602532244e2
 Description:  vlmcsd is a KMS Emulator in C.
 
