@@ -113,7 +113,7 @@ sed -i "s/^CONFIG_TARGET_ROOTFS_PARTSIZE=.*$/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/
 
 make image PROFILE=generic PACKAGES="$STR" \
            FILES=../main/files/ \
-           DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy swanctl"
+           DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy swanctl" V=s
 
 cd - &>/dev/null
 cp -a openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64/bin/targets/x86/64 bin
