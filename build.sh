@@ -118,4 +118,4 @@ make image PROFILE=generic PACKAGES="$STR" \
 cd - &>/dev/null
 cp -a openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64/bin/targets/x86/64 bin
 
-##tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-12.3.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
+#tree openwrt-sdk-$SDK_VERSION-x86-64_gcc-12.3.0_musl.Linux-x86_64/bin/packages/x86_64>LIST.txt
