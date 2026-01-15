@@ -47,12 +47,11 @@ sed -i 's/download-ci-llvm=true/download-ci-llvm=false/g' feeds/packages/lang/ru
 #make package/feeds/packages/rust/host/compile V=s -j1
 
 make package/luci-app-openclash/compile -j
-#make package/strongswan/compile -j
+make package/strongswan/compile -j
 
 . ../main/DEFAULT
 STR=$DEFAULT
-#STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
-STR="${STR} luci-app-openclash"
+STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
 
 # install theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon.git
@@ -79,7 +78,7 @@ done
 #cp -a bin/packages/x86_64/base/luci-app-argon-config*.ipk bin/packages/x86_64/custom/
 
 cp -a bin/packages/x86_64/openclash/*.apk bin/packages/x86_64/custom/
-#cp -a bin/packages/x86_64/my_strongswan/strongswan-mod-bypass-lan*.apk bin/packages/x86_64/custom/
+cp -a bin/packages/x86_64/my_strongswan/strongswan-mod-bypass-lan*.apk bin/packages/x86_64/custom/
 
 make package/index V=sc
 cd - &>/dev/null
