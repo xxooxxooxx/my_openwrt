@@ -30,6 +30,7 @@ sed -i "s/^CONFIG_TARGET_ROOTFS_PARTSIZE=.*$/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/
 切换到分支gh-pages
 
 bin目录即是编译好的固件
+password: linux
 
 + 也可以单独安装自编译软件包
 ```
