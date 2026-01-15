@@ -6,12 +6,6 @@ GCC_VER=14.3.0
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 
 sudo apt-get update
-#sudo apt-get install build-essential ccache ecj fastjar file g++ gawk \
-#gettext git java-propose-classpath libelf-dev libncurses5-dev \
-#libncursesw5-dev libssl-dev python2 python2.7-dev python3 unzip wget \
-#python3-distutils python3-setuptools rsync subversion swig time \
-#xsltproc zlib1g-dev zstd -y
-
 sudo apt install build-essential clang flex bison g++ gawk \
 gcc-multilib g++-multilib gettext git libncurses5-dev libssl-dev \
 python3-setuptools rsync swig unzip zlib1g-dev file wget zstd -y
@@ -36,12 +30,8 @@ sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-Op
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
-#./scripts/feeds uninstall tinc
-#./scripts/feeds install -p custom tinc
-
 ./scripts/feeds update openclash
 ./scripts/feeds install -a -p openclash
-
 ./scripts/feeds update my_strongswan
 ./scripts/feeds uninstall strongswan
 ./scripts/feeds install -p my_strongswan strongswan
@@ -52,17 +42,17 @@ make package/luci-base/compile -j
 make package/feeds/packages/rust/host/prepare V=s -j1 || true  # 只 prepare，不 compile
 sed -i 's/download-ci-llvm=true/download-ci-llvm=false/g' feeds/packages/lang/rust/Makefile || true
 
-
 #echo "Patched rust Makefile:"
 #grep 'download-ci-llvm' feeds/packages/lang/rust/Makefile  # 日志确认修改
 #make package/feeds/packages/rust/host/compile V=s -j1
 
 make package/luci-app-openclash/compile -j
-make package/strongswan/compile -j
+#make package/strongswan/compile -j
 
 . ../main/DEFAULT
 STR=$DEFAULT
-STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
+#STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
+STR="${STR} luci-app-openclash"
 
 # install theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon.git
@@ -88,8 +78,8 @@ done
 #cp -a bin/packages/x86_64/base/luci-theme-argon*.ipk bin/packages/x86_64/custom/
 #cp -a bin/packages/x86_64/base/luci-app-argon-config*.ipk bin/packages/x86_64/custom/
 
-cp -a bin/packages/x86_64/openclash/*.ipk bin/packages/x86_64/custom/
-cp -a bin/packages/x86_64/my_strongswan/strongswan-mod-bypass-lan*.ipk bin/packages/x86_64/custom/
+cp -a bin/packages/x86_64/openclash/*.apk bin/packages/x86_64/custom/
+#cp -a bin/packages/x86_64/my_strongswan/strongswan-mod-bypass-lan*.apk bin/packages/x86_64/custom/
 
 make package/index V=sc
 cd - &>/dev/null
@@ -106,14 +96,15 @@ cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64/bin/packa
 #	src/gz openwrt_telephony https://downloads.openwrt.org/releases/$SDK_VERSION/packages/x86_64/telephony
 #EOF
 
+cp -a packages/*.apk openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64/packages
 cd openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64
-sed -i "/option check_signature/d" $(pwd)/repositories.conf
-sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
+#sed -i "/option check_signature/d" $(pwd)/repositories.conf
+#sed -i "\$a\src custom file://$H_PATH/packages" $(pwd)/repositories.conf
 sed -i "s/^CONFIG_TARGET_ROOTFS_PARTSIZE=.*$/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config
 
 make image PROFILE=generic PACKAGES="$STR" \
            FILES=../main/files/ \
-           DISABLED_SERVICES="led tor ipset-dns tinc ipsec 3proxy swanctl" V=s
+           DISABLED_SERVICES="led tor ipset-dns tinc ipsec swanctl" V=s
 
 cd - &>/dev/null
 cp -a openwrt-imagebuilder-$SDK_VERSION-x86-64.Linux-x86_64/bin/targets/x86/64 bin
