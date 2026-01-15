@@ -1,2 +1,2 @@
-untrusted comment: signed by key f9e2d473a1697d4d
+untrusted comment: verify with f9e2d473a1697d4d.pub
 RWT54tRzoWl9TY5bTaZmjPp0nYS/GPElR+643dEPxnoZ/q8cOVYJrJZ0NTgrr3kZk9nPVLuShWxYJ1Ow3zwAhGC4rhczkJlNrQc=
