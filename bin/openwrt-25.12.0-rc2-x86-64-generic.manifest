@@ -335,6 +335,7 @@ strongswan-charon - 6.0.3-r1
 strongswan-default - 6.0.3-r1
 strongswan-mod-aes - 6.0.3-r1
 strongswan-mod-attr - 6.0.3-r1
+strongswan-mod-bypass-lan - 6.0.4-r2
 strongswan-mod-connmark - 6.0.3-r1
 strongswan-mod-constraints - 6.0.3-r1
 strongswan-mod-des - 6.0.3-r1

@@ -4,6 +4,7 @@
   "packages": {
     "luci-app-openclash": "0.47.047",
     "luci-app-switch-lan-play": "0.0.3-r1",
+    "strongswan-mod-bypass-lan": "6.0.4-r2",
     "switch-lan-play": "0.2.3-r1",
     "vlmcsd": "1113-r1"
   }
