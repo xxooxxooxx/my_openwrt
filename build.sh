@@ -82,7 +82,7 @@ cp -a bin/packages/x86_64/my_strongswan/strongswan-mod-bypass-lan*.apk bin/packa
 
 make package/index V=sc
 ./staging_dir/host/bin/usign -S -m bin/packages/x86_64/custom/packages.adb -s key-build
-cat bin/packages/x86_64/custom/packages.adb.sig >> bin/packages/x86_64/custom/packages.adb
+#cat bin/packages/x86_64/custom/packages.adb.sig >> bin/packages/x86_64/custom/packages.adb
 cd - &>/dev/null
 
 cp -a openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64/bin/packages/x86_64/custom packages
