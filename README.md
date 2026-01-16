@@ -34,10 +34,9 @@ password: linux
 
 + 也可以单独安装自编译软件包
 ```
-echo "src/gz custom https://xxooxxooxx.github.io/my_openwrt/packages" >>/etc/opkg/customfeeds.conf
-wget https://xxooxxooxx.github.io/my_openwrt/packages/public.key
-opkg-key add public.key
-opkg update
+echo "https://xxooxxooxx.github.io/my_openwrt/packages/packages.adb" >>/etc/apk/repositories.d/customfeeds.list
+wget https://xxooxxooxx.github.io/my_openwrt/packages/key-build.pub -O /etc/apk/keys/key-build.pub
+apk update  
 ```
 + 安装到虚拟机 Proxmox VE
 ```
