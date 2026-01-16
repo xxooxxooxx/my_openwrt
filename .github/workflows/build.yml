@@ -44,8 +44,10 @@ jobs:
       - run: echo "${{ secrets.KEY }}" >key-build
       - run: |
           cat >key-build.pub<<EOF
-          untrusted comment: my_openwrt key
-          RWT54tRzoWl9TS58xkcY5koeSXJ3iln3MpvSfbc95la6qc6pjk9Qpvek
+          -----BEGIN PUBLIC KEY-----
+          MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOMPnqmadN7BLcFA7NUmB+S71DI6Z
+          88UlabUWnt8S1ythCLyHNJErE5/zhtUTwKznLRV2uG8t52o94PDAZLp9MA==
+          -----END PUBLIC KEY-----
           EOF
 
       - uses: actions/checkout@v4
