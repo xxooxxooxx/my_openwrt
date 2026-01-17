@@ -18,7 +18,11 @@ rm -f *.tar.zst
 H_PATH=$(pwd)
 
 cd openwrt-sdk-$SDK_VERSION-x86-64_gcc-"$GCC_VER"_musl.Linux-x86_64
-cp ../key-build* .
+#cp ../key-build* .
+cp ../private-key.pem .
+cp ../public-key.pem .
+chmod 600 private-key.pem
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
