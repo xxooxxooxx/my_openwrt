@@ -40,9 +40,9 @@ apk update
 ```
 + 安装到虚拟机 Proxmox VE
 ```
-SDK_VERSION=23.05.0-rc2
+SDK_VERSION=25.12.0-rc2
 
-wget https://github.com/xxooxxooxx/my_openwrt/raw/gh-pages/bin/openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
+wget https://github.com/xxooxxooxx/my_openwrt/bin/openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
 gunzip openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
 qm importdisk <vmid> openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img local-lvm
 ```
