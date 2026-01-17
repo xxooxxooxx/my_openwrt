@@ -42,7 +42,7 @@ apk update
 ```
 SDK_VERSION=25.12.0-rc2
 
-wget https://github.com/xxooxxooxx/my_openwrt/bin/openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
+wget https://xxooxxooxx.github.io/my_openwrt/bin/openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
 gunzip openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img.gz
 qm importdisk <vmid> openwrt-$SDK_VERSION-x86-64-generic-ext4-combined.img local-lvm
 ```
