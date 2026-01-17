@@ -41,9 +41,9 @@ jobs:
           docker-images: true
           swap-storage: true
           
-      - run: echo "${{ secrets.KEY }}" >key-build
+      - run: echo "${{ secrets.KEY }}" >private-key.pem
       - run: |
-          cat >key-build.pub<<EOF
+          cat >public-key.pem<<EOF
           -----BEGIN PUBLIC KEY-----
           MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOMPnqmadN7BLcFA7NUmB+S71DI6Z
           88UlabUWnt8S1ythCLyHNJErE5/zhtUTwKznLRV2uG8t52o94PDAZLp9MA==
