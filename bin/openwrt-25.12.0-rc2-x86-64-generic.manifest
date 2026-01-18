@@ -1,5 +1,5 @@
 6in4 - 29
-apk-mbedtls - 3.0.2-r1
+apk-mbedtls - 3.0.2-r2
 attendedsysupgrade-common - 9
 base-files - 1682~d76c64ad00
 bash - 5.2.37-r1
@@ -220,13 +220,14 @@ libnl-tiny1 - 2025.12.02~40493a65-r1
 libopenssl-conf - 3.5.4-r1
 libopenssl3 - 3.5.4-r1
 libpcap1 - 1.10.5-r3
+libpcre2 - 10.47-r1
 libpthread - 1.2.5-r5
 libpython3-3.13 - 3.13.9-r2
 libreadline8 - 8.3-r1
 librt - 1.2.5-r5
 libruby3.4 - 3.4.8-r1
 libsmartcols1 - 2.41.3-r1
-libsqlite3-0 - 3.51.1-r1
+libsqlite3-0 - 3.51.2-r1
 libss2 - 1.47.3-r1
 libstdcpp6 - 14.3.0-r5
 libtasn1 - 4.19.0-r2
@@ -234,7 +235,7 @@ libubox20251208 - 2025.12.08~7928f171-r1
 libubus-lua - 2025.12.02~3cc98db1-r1
 libubus20251202 - 2025.12.02~3cc98db1-r1
 libuci20250120 - 2025.12.02~66127cd7-r1
-libuclient20201210 - 2025.10.03~dc909ca7-r1
+libuclient20201210 - 2025.10.03~dc909ca7-r2
 libucode20230711 - 2025.12.01~f7c2b97a-r1
 libudebug - 2025.10.21~75f39cd4
 libustream-mbedtls20201210 - 2025.10.03~5a81c108-r1
@@ -275,7 +276,7 @@ luci-theme-bootstrap - 26.015.62356~6b773f6
 luci-theme-openwrt-2020 - 26.015.62356~6b773f6
 mkf2fs - 1.16.0-r4
 mtd - 27
-netifd - 2025.10.20~777f5942-r2
+netifd - 2025.10.20~777f5942-r3
 nftables-json - 1.1.6-r1
 odhcp6c - 2025.12.29~699cc615-r1
 odhcpd-ipv6only - 2025.12.18~0779ee28-r1
@@ -376,7 +377,7 @@ ubox - 2025.10.30~6f78fa49-r1
 ubus - 2025.12.02~3cc98db1-r1
 ubusd - 2025.12.02~3cc98db1-r1
 uci - 2025.12.02~66127cd7-r1
-uclient-fetch - 2025.10.03~dc909ca7-r1
+uclient-fetch - 2025.10.03~dc909ca7-r2
 ucode - 2025.12.01~f7c2b97a-r1
 ucode-mod-fs - 2025.12.01~f7c2b97a-r1
 ucode-mod-html - 1
@@ -394,6 +395,7 @@ urngd - 2025.10.03~f17e33d9-r1
 usign - 2025.10.03~c4c72b1b-r1
 vlmcsd - 1113-r1
 vpnc-scripts - 20151220-r3
+wget-ssl - 1.25.0-r1
 wireguard-tools - 1.0.20250521-r1
 xl2tpd - 1.3.18-r2
 xtables-nft - 1.8.10-r2
