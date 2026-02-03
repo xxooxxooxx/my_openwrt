@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SDK_VERSION=25.12.0-rc3
+SDK_VERSION=25.12.0-rc4
 GCC_VER=14.3.0
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
