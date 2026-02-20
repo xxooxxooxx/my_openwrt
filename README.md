@@ -21,8 +21,8 @@ find ./package -name tinc               //确认
 
 + build.sh
 ```
-SDK_VERSION=23.05.0-rc2  //SDK版本
-GCC_VER=12.3.0           //GCC版本
+SDK_VERSION=25.12.0-rc5  //SDK版本
+GCC_VER=14.3.0           //GCC版本
 sed -i "s/^CONFIG_TARGET_ROOTFS_PARTSIZE=.*$/CONFIG_TARGET_ROOTFS_PARTSIZE=2048/g" $(pwd)/.config  //69行，修改固件可读写分区大小(2048)
 ```
 + 下载固件
