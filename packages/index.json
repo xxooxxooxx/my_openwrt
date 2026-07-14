@@ -2,9 +2,9 @@
   "version": 2,
   "architecture": "x86_64",
   "packages": {
-    "luci-app-openclash": "0.47.097",
+    "luci-app-openclash": "0.47.116",
     "luci-app-switch-lan-play": "0.0.3-r1",
-    "strongswan-mod-bypass-lan": "6.0.6-r2",
+    "strongswan-mod-bypass-lan": "6.0.7-r3",
     "switch-lan-play": "0.2.3-r1",
     "vlmcsd": "1113-r1"
   }
