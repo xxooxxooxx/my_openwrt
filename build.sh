@@ -31,6 +31,7 @@ chmod 600 private-key.pem
 sed -i "\$a\src-git custom https://github.com/xxooxxooxx/my_openwrt.git" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git openclash https://github.com/vernesong/OpenClash.git" $(pwd)/feeds.conf.default
 sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-OpenWrt.git" $(pwd)/feeds.conf.default
+sed -i "\$a\src-git vantage https://github.com/anothaDev/luci-theme-vantage.git" $(pwd)/feeds.conf.default
 
 ./scripts/feeds update custom
 ./scripts/feeds install -a -p custom
@@ -39,6 +40,8 @@ sed -i "\$a\src-git my_strongswan https://github.com/xxooxxooxx/strongSwan-on-Op
 ./scripts/feeds update my_strongswan
 ./scripts/feeds uninstall strongswan
 ./scripts/feeds install -p my_strongswan strongswan
+./scripts/feeds update vantage
+./scripts/feeds install -a -p vantage
 
 make defconfig
 make package/luci-base/compile -j
@@ -52,10 +55,20 @@ sed -i 's/download-ci-llvm=true/download-ci-llvm=false/g' feeds/packages/lang/ru
 
 make package/luci-app-openclash/compile -j
 make package/strongswan/compile -j
+make package/luci-theme-vantage/compile -j
+make package/luci-app-vantage/compile -j
+make package/luci-app-vantage-aps/compile -j
+make package/luci-app-vantage-traffic/compile -j
 
 . ../main/DEFAULT
 STR=$DEFAULT
 STR="${STR} luci-app-openclash strongswan-mod-bypass-lan"
+STR="${STR} luci-theme-vantage luci-app-vantage luci-app-vantage-aps luci-app-vantage-traffic"
+for pkg in luci-i18n-vantage-theme-zh-cn luci-i18n-vantage-zh-cn luci-i18n-vantage-aps-zh-cn luci-i18n-vantage-traffic-zh-cn; do
+  if ls bin/packages/x86_64/vantage/${pkg}-[0-9]*.apk >/dev/null 2>&1; then
+    STR="${STR} ${pkg}"
+  fi
+done
 
 # install theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon.git
@@ -83,6 +96,8 @@ done
 
 cp -a bin/packages/x86_64/openclash/*.apk bin/packages/x86_64/custom/
 cp -a bin/packages/x86_64/my_strongswan/strongswan-mod-bypass-lan*.apk bin/packages/x86_64/custom/
+cp -a bin/packages/x86_64/vantage/*.apk bin/packages/x86_64/custom/
+
 
 make package/index V=sc
 #./staging_dir/host/bin/apk mkndx --allow-untrusted --sign key-build -o ./bin/packages/x86_64/custom/packages.adb ./bin/packages/x86_64/custom/*.apk
