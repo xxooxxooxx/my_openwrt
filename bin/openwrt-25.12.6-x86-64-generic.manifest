@@ -147,6 +147,7 @@ kmod-nft-core - 6.12.112-r1
 kmod-nft-fib - 6.12.112-r1
 kmod-nft-nat - 6.12.112-r1
 kmod-nft-offload - 6.12.112-r1
+kmod-nft-tproxy - 6.12.112-r1
 kmod-nls-base - 6.12.112-r1
 kmod-nls-cp437 - 6.12.112-r1
 kmod-nls-iso8859-1 - 6.12.112-r1
